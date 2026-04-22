@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background filled by adaptive icon background -->
+
+    <!-- K letter -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M34,28 L34,80 L43,80 L43,28 Z" />
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M43,53 L68,28 L79,28 L57,55 Z" />
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M43,57 L68,80 L79,80 L57,55 Z" />
+    <!-- Gold dot -->
+    <path android:fillColor="#FF8F00"
+        android:pathData="M70,50 A5,5 0 1,1 69.9,50 Z" />
+</vector>

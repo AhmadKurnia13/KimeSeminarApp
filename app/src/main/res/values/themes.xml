@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Application Theme -->
+    <style name="Theme.KimeSeminar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/kime_primary</item>
+        <item name="colorPrimaryVariant">@color/kime_primary_dark</item>
+        <item name="colorSecondary">@color/kime_secondary</item>
+        <item name="colorSecondaryVariant">@color/kime_secondary_light</item>
+        <item name="colorOnPrimary">@color/kime_text_on_primary</item>
+        <item name="android:colorBackground">@color/kime_background</item>
+        <item name="colorSurface">@color/kime_surface</item>
+        <item name="colorError">@color/kime_error</item>
+        <item name="colorOnBackground">@color/kime_text_primary</item>
+        <item name="colorOnSurface">@color/kime_text_primary</item>
+        <item name="android:statusBarColor">@color/kime_primary_dark</item>
+        <item name="android:navigationBarColor">@color/kime_surface</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="textInputStyle">@style/KimeTextInputLayout</item>
+        <item name="materialButtonStyle">@style/KimePrimaryButton</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.KimeSeminar.Splash" parent="Theme.KimeSeminar">
+        <item name="android:statusBarColor">@color/kime_primary</item>
+        <item name="android:navigationBarColor">@color/kime_primary</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- TextInputLayout Style -->
+    <style name="KimeTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/input_corner_radius</item>
+        <item name="boxStrokeColor">@color/selector_input_stroke</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/kime_primary</item>
+        <item name="boxBackgroundColor">@color/kime_surface</item>
+        <item name="errorIconDrawable">@null</item>
+        <!-- Menambahkan warna teks input agar hitam/gelap -->
+        <item name="android:textColor">@color/kime_text_primary</item>
+        <item name="android:textColorHint">@color/kime_text_hint</item>
+    </style>
+
+    <!-- TextInputLayout Filled style (used in form) -->
+    <style name="KimeTextInputFilled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+        <item name="boxBackgroundColor">@color/kime_surface_variant</item>
+        <item name="hintTextColor">@color/kime_primary</item>
+        <item name="boxStrokeColor">@color/kime_primary</item>
+        <item name="android:textColor">@color/kime_text_primary</item>
+    </style>
+
+    <!-- Primary Button -->
+    <style name="KimePrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/kime_primary</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:textColor">@color/kime_text_on_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="elevation">4dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="rippleColor">@color/kime_white_alpha_30</item>
+    </style>
+
+    <!-- Secondary / Outlined Button -->
+    <style name="KimeOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/kime_primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:textColor">@color/kime_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="rippleColor">@color/kime_primary_surface</item>
+    </style>
+
+    <!-- Accent / Gold Button -->
+    <style name="KimeAccentButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/kime_secondary</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:textColor">@color/kime_text_on_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="elevation">4dp</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+    </style>
+
+    <!-- AlertDialog Style -->
+    <style name="KimeAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/kime_primary</item>
+        <item name="colorSecondary">@color/kime_secondary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/KimeDialogPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/KimeDialogNegativeButton</item>
+        <item name="shapeAppearanceMediumComponent">@style/KimeDialogShape</item>
+    </style>
+
+    <style name="KimeDialogShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="KimeDialogPositiveButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/kime_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="KimeDialogNegativeButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/kime_error</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="KimeToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@drawable/bg_gradient_header</item>
+        <item name="titleTextColor">@color/kime_text_on_primary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.KimeToolbarTitle</item>
+    </style>
+
+    <style name="TextAppearance.KimeToolbarTitle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/kime_text_on_primary</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="KimeCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/kime_surface</item>
+        <item name="contentPaddingLeft">@dimen/card_padding</item>
+        <item name="contentPaddingRight">@dimen/card_padding</item>
+        <item name="contentPaddingTop">@dimen/card_padding</item>
+        <item name="contentPaddingBottom">@dimen/card_padding</item>
+    </style>
+
+</resources>

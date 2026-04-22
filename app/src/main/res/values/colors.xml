@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ═══════════════════════════════════════
+         KIME BRAND COLOR PALETTE
+         Premium Indigo × Gold Theme
+    ═══════════════════════════════════════ -->
+
+    <!-- Primary — Deep Indigo -->
+    <color name="kime_primary">#1A237E</color>
+    <color name="kime_primary_dark">#0D1B5E</color>
+    <color name="kime_primary_medium">#283593</color>
+    <color name="kime_primary_light">#3F51B5</color>
+    <color name="kime_primary_surface">#E8EAF6</color>
+
+    <!-- Secondary / Accent — Amber Gold -->
+    <color name="kime_secondary">#FF8F00</color>
+    <color name="kime_secondary_light">#FFB300</color>
+    <color name="kime_secondary_pale">#FFF8E1</color>
+
+    <!-- Background & Surface -->
+    <color name="kime_background">#F4F6FF</color>
+    <color name="kime_surface">#FFFFFF</color>
+    <color name="kime_surface_variant">#ECEEF8</color>
+
+    <!-- Text Colors -->
+    <color name="kime_text_primary">#1A1A2E</color>
+    <color name="kime_text_secondary">#4A4A6A</color>
+    <color name="kime_text_hint">#9898BB</color>
+    <color name="kime_text_on_primary">#FFFFFF</color>
+    <color name="kime_text_on_secondary">#1A1A2E</color>
+
+    <!-- Status Colors -->
+    <color name="kime_success">#1B5E20</color>
+    <color name="kime_success_bg">#E8F5E9</color>
+    <color name="kime_success_medium">#2E7D32</color>
+    <color name="kime_error">#B71C1C</color>
+    <color name="kime_error_bg">#FFEBEE</color>
+    <color name="kime_warning">#E65100</color>
+    <color name="kime_info">#0277BD</color>
+
+    <!-- Decorative & Overlay -->
+    <color name="kime_divider">#E0E3F5</color>
+    <color name="kime_shadow">#1A000000</color>
+    <color name="kime_overlay_dark">#99000000</color>
+    <color name="kime_white_alpha_20">#33FFFFFF</color>
+    <color name="kime_white_alpha_10">#1AFFFFFF</color>
+    <color name="kime_white_alpha_30">#4DFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Material Theme overrides -->
+    <color name="colorPrimary">@color/kime_primary</color>
+    <color name="colorPrimaryVariant">@color/kime_primary_dark</color>
+    <color name="colorSecondary">@color/kime_secondary</color>
+    <color name="colorSecondaryVariant">@color/kime_secondary_light</color>
+    <color name="colorOnPrimary">@color/kime_text_on_primary</color>
+    <color name="colorBackground">@color/kime_background</color>
+    <color name="colorSurface">@color/kime_surface</color>
+    <color name="colorError">@color/kime_error</color>
+    <color name="colorOnBackground">@color/kime_text_primary</color>
+    <color name="colorOnSurface">@color/kime_text_primary</color>
+    <color name="colorOnError">@color/kime_text_on_primary</color>
+</resources>

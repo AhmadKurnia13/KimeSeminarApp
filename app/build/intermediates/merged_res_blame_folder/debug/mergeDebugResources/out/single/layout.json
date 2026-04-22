@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/item_spinner_dropdown.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/activity_login.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/activity_result.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/activity_result.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/item_spinner.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/item_spinner.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/activity_splash.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/activity_form.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/activity_form.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/activity_register.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-mergeDebugResources-32:/layout/activity_home.xml",
+        "source": "com.kime.seminar.app-main-35:/layout/activity_home.xml"
+    }
+]

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kime Seminar</string>
+    <string name="app_tagline">Smart Registration Platform</string>
+    <string name="app_full_name">Kime Seminar Registration App</string>
+
+    <!-- Login -->
+    <string name="login_title">Selamat Datang</string>
+    <string name="login_subtitle">Masuk ke akun Kime Anda</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Masuk</string>
+    <string name="btn_register">Daftar Sekarang</string>
+    <string name="no_account">Belum punya akun?</string>
+    <string name="forgot_password">Lupa password?</string>
+
+    <!-- Register -->
+    <string name="register_title">Buat Akun Baru</string>
+    <string name="register_subtitle">Bergabung dengan komunitas Kime</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_confirm_password">Konfirmasi Password</string>
+    <string name="already_have_account">Sudah punya akun?</string>
+    <string name="btn_sign_up">Daftar</string>
+
+    <!-- Home -->
+    <string name="home_title">Kime Seminar</string>
+    <string name="btn_daftar_seminar">Daftar Seminar</string>
+    <string name="upcoming_seminars">Seminar Tersedia</string>
+
+    <!-- Form -->
+    <string name="form_title">Form Pendaftaran</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="hint_no_hp">Nomor HP (08xxxx)</string>
+    <string name="hint_tanggal">Tanggal Masuk</string>
+    <string name="hint_versi_soal">Versi Soal</string>
+    <string name="hint_halaman">Halaman</string>
+    <string name="label_jenis_kelamin">Jenis Kelamin</string>
+    <string name="label_pilih_seminar">Pilihan Seminar</string>
+    <string name="label_persetujuan">Saya menyetujui bahwa data yang saya input adalah benar dan dapat dipertanggungjawabkan</string>
+    <string name="btn_submit">Submit Pendaftaran</string>
+    <string name="btn_reset">Reset</string>
+
+    <!-- Result -->
+    <string name="result_success">Pendaftaran Berhasil! 🎉</string>
+    <string name="result_subtitle">Selamat! Anda telah berhasil mendaftar. Cek email untuk konfirmasi lebih lanjut.</string>
+    <string name="btn_back_home">Kembali ke Beranda</string>
+    <string name="btn_daftar_lagi">Daftar Seminar Lain</string>
+
+    <!-- Logout -->
+    <string name="logout">Keluar</string>
+    <string name="menu_logout">Keluar</string>
+</resources>

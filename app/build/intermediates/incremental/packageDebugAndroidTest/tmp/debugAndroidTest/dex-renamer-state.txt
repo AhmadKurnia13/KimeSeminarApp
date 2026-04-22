@@ -1,0 +1,7 @@
+#Wed Apr 22 21:16:12 WIB 2026
+base.0=C\:\\Users\\MyBook Hype AMD\\AndroidStudioProjects\\KimeSeminarApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=C\:\\Users\\MyBook Hype AMD\\AndroidStudioProjects\\KimeSeminarApp\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+path.0=classes.dex
+path.1=0/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

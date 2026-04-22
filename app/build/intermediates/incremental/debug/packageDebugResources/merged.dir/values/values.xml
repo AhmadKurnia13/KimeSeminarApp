@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">@color/kime_background</color>
+    <color name="colorError">@color/kime_error</color>
+    <color name="colorOnBackground">@color/kime_text_primary</color>
+    <color name="colorOnError">@color/kime_text_on_primary</color>
+    <color name="colorOnPrimary">@color/kime_text_on_primary</color>
+    <color name="colorOnSurface">@color/kime_text_primary</color>
+    <color name="colorPrimary">@color/kime_primary</color>
+    <color name="colorPrimaryVariant">@color/kime_primary_dark</color>
+    <color name="colorSecondary">@color/kime_secondary</color>
+    <color name="colorSecondaryVariant">@color/kime_secondary_light</color>
+    <color name="colorSurface">@color/kime_surface</color>
+    <color name="kime_background">#F4F6FF</color>
+    <color name="kime_divider">#E0E3F5</color>
+    <color name="kime_error">#B71C1C</color>
+    <color name="kime_error_bg">#FFEBEE</color>
+    <color name="kime_info">#0277BD</color>
+    <color name="kime_overlay_dark">#99000000</color>
+    <color name="kime_primary">#1A237E</color>
+    <color name="kime_primary_dark">#0D1B5E</color>
+    <color name="kime_primary_light">#3F51B5</color>
+    <color name="kime_primary_medium">#283593</color>
+    <color name="kime_primary_surface">#E8EAF6</color>
+    <color name="kime_secondary">#FF8F00</color>
+    <color name="kime_secondary_light">#FFB300</color>
+    <color name="kime_secondary_pale">#FFF8E1</color>
+    <color name="kime_shadow">#1A000000</color>
+    <color name="kime_success">#1B5E20</color>
+    <color name="kime_success_bg">#E8F5E9</color>
+    <color name="kime_success_medium">#2E7D32</color>
+    <color name="kime_surface">#FFFFFF</color>
+    <color name="kime_surface_variant">#ECEEF8</color>
+    <color name="kime_text_hint">#9898BB</color>
+    <color name="kime_text_on_primary">#FFFFFF</color>
+    <color name="kime_text_on_secondary">#1A1A2E</color>
+    <color name="kime_text_primary">#1A1A2E</color>
+    <color name="kime_text_secondary">#4A4A6A</color>
+    <color name="kime_warning">#E65100</color>
+    <color name="kime_white_alpha_10">#1AFFFFFF</color>
+    <color name="kime_white_alpha_20">#33FFFFFF</color>
+    <color name="kime_white_alpha_30">#4DFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <dimen name="avatar_size">56dp</dimen>
+    <dimen name="avatar_size_lg">80dp</dimen>
+    <dimen name="btn_corner_radius">26dp</dimen>
+    <dimen name="btn_corner_radius_sm">12dp</dimen>
+    <dimen name="btn_height">52dp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_corner_radius_sm">12dp</dimen>
+    <dimen name="card_elevation">6dp</dimen>
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="icon_hero">80dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_md">24dp</dimen>
+    <dimen name="icon_sm">20dp</dimen>
+    <dimen name="icon_xl">48dp</dimen>
+    <dimen name="input_corner_radius">12dp</dimen>
+    <dimen name="logo_size">80dp</dimen>
+    <dimen name="logo_size_sm">56dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_xxl">48dp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_hero">34sp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+    <dimen name="text_md">16sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_xl">22sp</dimen>
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_xxl">28sp</dimen>
+    <string name="already_have_account">Sudah punya akun?</string>
+    <string name="app_full_name">Kime Seminar Registration App</string>
+    <string name="app_name">Kime Seminar</string>
+    <string name="app_tagline">Smart Registration Platform</string>
+    <string name="btn_back_home">Kembali ke Beranda</string>
+    <string name="btn_daftar_lagi">Daftar Seminar Lain</string>
+    <string name="btn_daftar_seminar">Daftar Seminar</string>
+    <string name="btn_login">Masuk</string>
+    <string name="btn_register">Daftar Sekarang</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_sign_up">Daftar</string>
+    <string name="btn_submit">Submit Pendaftaran</string>
+    <string name="forgot_password">Lupa password?</string>
+    <string name="form_title">Form Pendaftaran</string>
+    <string name="hint_confirm_password">Konfirmasi Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_halaman">Halaman</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="hint_name">Nama Lengkap</string>
+    <string name="hint_no_hp">Nomor HP (08xxxx)</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_tanggal">Tanggal Masuk</string>
+    <string name="hint_versi_soal">Versi Soal</string>
+    <string name="home_title">Kime Seminar</string>
+    <string name="label_jenis_kelamin">Jenis Kelamin</string>
+    <string name="label_persetujuan">Saya menyetujui bahwa data yang saya input adalah benar dan dapat dipertanggungjawabkan</string>
+    <string name="label_pilih_seminar">Pilihan Seminar</string>
+    <string name="login_subtitle">Masuk ke akun Kime Anda</string>
+    <string name="login_title">Selamat Datang</string>
+    <string name="logout">Keluar</string>
+    <string name="menu_logout">Keluar</string>
+    <string name="no_account">Belum punya akun?</string>
+    <string name="register_subtitle">Bergabung dengan komunitas Kime</string>
+    <string name="register_title">Buat Akun Baru</string>
+    <string name="result_subtitle">Selamat! Anda telah berhasil mendaftar. Cek email untuk konfirmasi lebih lanjut.</string>
+    <string name="result_success">Pendaftaran Berhasil! 🎉</string>
+    <string name="upcoming_seminars">Seminar Tersedia</string>
+    <style name="KimeAccentButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/kime_secondary</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:textColor">@color/kime_text_on_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="elevation">4dp</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+    </style>
+    <style name="KimeAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorPrimary">@color/kime_primary</item>
+        <item name="colorSecondary">@color/kime_secondary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/KimeDialogPositiveButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/KimeDialogNegativeButton</item>
+        <item name="shapeAppearanceMediumComponent">@style/KimeDialogShape</item>
+    </style>
+    <style name="KimeCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">@dimen/card_corner_radius</item>
+        <item name="cardElevation">@dimen/card_elevation</item>
+        <item name="cardBackgroundColor">@color/kime_surface</item>
+        <item name="contentPaddingLeft">@dimen/card_padding</item>
+        <item name="contentPaddingRight">@dimen/card_padding</item>
+        <item name="contentPaddingTop">@dimen/card_padding</item>
+        <item name="contentPaddingBottom">@dimen/card_padding</item>
+    </style>
+    <style name="KimeDialogNegativeButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/kime_error</item>
+    </style>
+    <style name="KimeDialogPositiveButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/kime_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="KimeDialogShape" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="KimeOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/kime_primary</item>
+        <item name="strokeWidth">1.5dp</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:textColor">@color/kime_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="rippleColor">@color/kime_primary_surface</item>
+    </style>
+    <style name="KimePrimaryButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/kime_primary</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:textColor">@color/kime_text_on_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="elevation">4dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
+        <item name="rippleColor">@color/kime_white_alpha_30</item>
+    </style>
+    <style name="KimeTextInputFilled" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxCornerRadiusTopStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">0dp</item>
+        <item name="boxCornerRadiusBottomEnd">0dp</item>
+        <item name="boxBackgroundColor">@color/kime_surface_variant</item>
+        <item name="hintTextColor">@color/kime_primary</item>
+        <item name="boxStrokeColor">@color/kime_primary</item>
+        <item name="android:textColor">@color/kime_text_primary</item>
+    </style>
+    <style name="KimeTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/input_corner_radius</item>
+        <item name="boxStrokeColor">@color/selector_input_stroke</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/kime_primary</item>
+        <item name="boxBackgroundColor">@color/kime_surface</item>
+        <item name="errorIconDrawable">@null</item>
+        
+        <item name="android:textColor">@color/kime_text_primary</item>
+        <item name="android:textColorHint">@color/kime_text_hint</item>
+    </style>
+    <style name="KimeToolbar" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@drawable/bg_gradient_header</item>
+        <item name="titleTextColor">@color/kime_text_on_primary</item>
+        <item name="titleTextAppearance">@style/TextAppearance.KimeToolbarTitle</item>
+    </style>
+    <style name="TextAppearance.KimeToolbarTitle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/kime_text_on_primary</item>
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Theme.KimeSeminar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/kime_primary</item>
+        <item name="colorPrimaryVariant">@color/kime_primary_dark</item>
+        <item name="colorSecondary">@color/kime_secondary</item>
+        <item name="colorSecondaryVariant">@color/kime_secondary_light</item>
+        <item name="colorOnPrimary">@color/kime_text_on_primary</item>
+        <item name="android:colorBackground">@color/kime_background</item>
+        <item name="colorSurface">@color/kime_surface</item>
+        <item name="colorError">@color/kime_error</item>
+        <item name="colorOnBackground">@color/kime_text_primary</item>
+        <item name="colorOnSurface">@color/kime_text_primary</item>
+        <item name="android:statusBarColor">@color/kime_primary_dark</item>
+        <item name="android:navigationBarColor">@color/kime_surface</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="textInputStyle">@style/KimeTextInputLayout</item>
+        <item name="materialButtonStyle">@style/KimePrimaryButton</item>
+    </style>
+    <style name="Theme.KimeSeminar.Splash" parent="Theme.KimeSeminar">
+        <item name="android:statusBarColor">@color/kime_primary</item>
+        <item name="android:navigationBarColor">@color/kime_primary</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
