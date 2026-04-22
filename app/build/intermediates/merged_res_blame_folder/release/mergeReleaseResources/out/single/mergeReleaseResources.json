@@ -1,0 +1,258 @@
+[
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_gradient_login.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_gradient_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_card_rounded.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_card_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_star.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_star.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_person.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_person.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_kime_logo.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_kime_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-hdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_slide_out_right.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\slide_out_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_forgot_password.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_phone.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_phone.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_calendar.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_result.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_result.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_gradient_header.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_gradient_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-mdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_divider_item.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_divider_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_card_top_rounded.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_card_top_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_bounce_in.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\bounce_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_item_spinner_dropdown.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\color_selector_input_stroke.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\color\\selector_input_stroke.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_email.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_result_success.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_result_success.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_success_circle.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_success_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_info_card_blue.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_info_card_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_slide_up.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\slide_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_slide_in_left.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\slide_in_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_fade_out.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-release-35:/layout_activity_reset_password.xml.flat",
+        "source": "com.kime.seminar.app-main-36:/layout/activity_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_success.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_success.xml"
+    },
+    {
+        "merged": "com.kime.seminar.app-release-35:/layout_activity_forgot_password.xml.flat",
+        "source": "com.kime.seminar.app-main-36:/layout/activity_forgot_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_home_header.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_home_header.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_avatar_circle.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_avatar_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_avatar_primary.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_avatar_primary.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_slide_down.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\slide_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_reset_password.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\anim_fade_in.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_seminars.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_seminars.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_form.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_seminar_card.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_seminar_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_school.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_school.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_item_spinner.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\item_spinner.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-mdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_info.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_info.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\layout_activity_home.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\layout\\activity_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-xhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-hdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_check_circle.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_check_circle.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_badge.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_badge.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\menu_menu_home.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\menu\\menu_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\mipmap-xxhdpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_ic_seminar_illustration.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\ic_seminar_illustration.xml"
+    },
+    {
+        "merged": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-release-35:\\drawable_bg_logo_circle.xml.flat",
+        "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\daemon\\9.2.1\\com.kime.seminar.app-main-36:\\drawable\\bg_logo_circle.xml"
+    }
+]

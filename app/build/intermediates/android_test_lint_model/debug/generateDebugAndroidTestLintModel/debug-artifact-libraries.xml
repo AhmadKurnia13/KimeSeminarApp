@@ -1,0 +1,1001 @@
+<libraries>
+  <library
+      name=":@@:app::debug"
+      project=":app"/>
+  <library
+      name="androidx.test.ext:junit:1.1.5@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8b88ea19533a3d13aa0276deb59ba7a1\workspace\transformed\junit-1.1.5\jars\classes.jar"
+      resolved="androidx.test.ext:junit:1.1.5"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8b88ea19533a3d13aa0276deb59ba7a1\workspace\transformed\junit-1.1.5"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test.espresso:espresso-core:3.5.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\d9b79007a076ded0b6f2f7ae5ba8237c\workspace\transformed\espresso-core-3.5.1\jars\classes.jar"
+      resolved="androidx.test.espresso:espresso-core:3.5.1"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\d9b79007a076ded0b6f2f7ae5ba8237c\workspace\transformed\espresso-core-3.5.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.databinding:viewbinding:9.0.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9b26f68c51611dc738ca5db427538395\workspace\transformed\viewbinding-9.0.1\jars\classes.jar"
+      resolved="androidx.databinding:viewbinding:9.0.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9b26f68c51611dc738ca5db427538395\workspace\transformed\viewbinding-9.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.android.material:material:1.11.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9e74ffc4352bd4263e793b4c7b60e01e\workspace\transformed\material-1.11.0\jars\classes.jar"
+      resolved="com.google.android.material:material:1.11.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9e74ffc4352bd4263e793b4c7b60e01e\workspace\transformed\material-1.11.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.appcompat:appcompat:1.6.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\3de327505ac53bbe86ebdb26d7cece77\workspace\transformed\appcompat-1.6.1\jars\classes.jar"
+      resolved="androidx.appcompat:appcompat:1.6.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\3de327505ac53bbe86ebdb26d7cece77\workspace\transformed\appcompat-1.6.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.viewpager2:viewpager2:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\2e267127b14726ed8bac044031ddd87d\workspace\transformed\viewpager2-1.0.0\jars\classes.jar"
+      resolved="androidx.viewpager2:viewpager2:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\2e267127b14726ed8bac044031ddd87d\workspace\transformed\viewpager2-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.fragment:fragment:1.3.6@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\30f0b13afb6fe0b3a359fc489ef17cf0\workspace\transformed\fragment-1.3.6\jars\classes.jar"
+      resolved="androidx.fragment:fragment:1.3.6"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\30f0b13afb6fe0b3a359fc489ef17cf0\workspace\transformed\fragment-1.3.6"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.activity:activity:1.8.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\0e117a4c55a532cbff6ab53329ad80ae\workspace\transformed\activity-1.8.0\jars\classes.jar"
+      resolved="androidx.activity:activity:1.8.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\0e117a4c55a532cbff6ab53329ad80ae\workspace\transformed\activity-1.8.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test:core:1.5.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\5605da443ee3c106bedef434a2b1473d\workspace\transformed\core-1.5.0\jars\classes.jar"
+      resolved="androidx.test:core:1.5.0"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\5605da443ee3c106bedef434a2b1473d\workspace\transformed\core-1.5.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.appcompat:appcompat-resources:1.6.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\54ebf3382ab03056d56d0d770d2fc1be\workspace\transformed\appcompat-resources-1.6.1\jars\classes.jar"
+      resolved="androidx.appcompat:appcompat-resources:1.6.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\54ebf3382ab03056d56d0d770d2fc1be\workspace\transformed\appcompat-resources-1.6.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.drawerlayout:drawerlayout:1.1.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\917d932e031782dba8331c2cc48cf24e\workspace\transformed\drawerlayout-1.1.1\jars\classes.jar"
+      resolved="androidx.drawerlayout:drawerlayout:1.1.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\917d932e031782dba8331c2cc48cf24e\workspace\transformed\drawerlayout-1.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8a75c257bab070d1c9fdebbd4db0bafd\workspace\transformed\coordinatorlayout-1.1.0\jars\classes.jar"
+      resolved="androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8a75c257bab070d1c9fdebbd4db0bafd\workspace\transformed\coordinatorlayout-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.dynamicanimation:dynamicanimation:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\eb131492343a36963af2dc42861fccf4\workspace\transformed\dynamicanimation-1.0.0\jars\classes.jar"
+      resolved="androidx.dynamicanimation:dynamicanimation:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\eb131492343a36963af2dc42861fccf4\workspace\transformed\dynamicanimation-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.transition:transition:1.2.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\edd53751631bec7df0b419ae890b9235\workspace\transformed\transition-1.2.0\jars\classes.jar"
+      resolved="androidx.transition:transition:1.2.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\edd53751631bec7df0b419ae890b9235\workspace\transformed\transition-1.2.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.vectordrawable:vectordrawable-animated:1.1.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ace082bd9a025ec4e9f2f74c8a22c83b\workspace\transformed\vectordrawable-animated-1.1.0\jars\classes.jar"
+      resolved="androidx.vectordrawable:vectordrawable-animated:1.1.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ace082bd9a025ec4e9f2f74c8a22c83b\workspace\transformed\vectordrawable-animated-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.vectordrawable:vectordrawable:1.1.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9f07d272c62b8dce8d1aade85b78a3c9\workspace\transformed\vectordrawable-1.1.0\jars\classes.jar"
+      resolved="androidx.vectordrawable:vectordrawable:1.1.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9f07d272c62b8dce8d1aade85b78a3c9\workspace\transformed\vectordrawable-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.viewpager:viewpager:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\a6028cc074955427af1af48e4b461355\workspace\transformed\viewpager-1.0.0\jars\classes.jar"
+      resolved="androidx.viewpager:viewpager:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\a6028cc074955427af1af48e4b461355\workspace\transformed\viewpager-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.legacy:legacy-support-core-utils:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\cfb0b4fbc5f35f8b902eb51fe302a195\workspace\transformed\legacy-support-core-utils-1.0.0\jars\classes.jar"
+      resolved="androidx.legacy:legacy-support-core-utils:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\cfb0b4fbc5f35f8b902eb51fe302a195\workspace\transformed\legacy-support-core-utils-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.loader:loader:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\81951d83b36b253ab861c5692ba26000\workspace\transformed\loader-1.0.0\jars\classes.jar"
+      resolved="androidx.loader:loader:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\81951d83b36b253ab861c5692ba26000\workspace\transformed\loader-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.recyclerview:recyclerview:1.1.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\b926c5526775b6ef12b92371d5f7f666\workspace\transformed\recyclerview-1.1.0\jars\classes.jar"
+      resolved="androidx.recyclerview:recyclerview:1.1.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\b926c5526775b6ef12b92371d5f7f666\workspace\transformed\recyclerview-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.customview:customview:1.1.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\fadaad261b7d02e02c1d7018ae258007\workspace\transformed\customview-1.1.0\jars\classes.jar"
+      resolved="androidx.customview:customview:1.1.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\fadaad261b7d02e02c1d7018ae258007\workspace\transformed\customview-1.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="io.github.jan-tennert.supabase:postgrest-kt-android-debug:2.4.3@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\272ea41784b54492ebc3b797761c6c9a\workspace\transformed\postgrest-kt-debug\jars\classes.jar"
+      resolved="io.github.jan-tennert.supabase:postgrest-kt-android-debug:2.4.3"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\272ea41784b54492ebc3b797761c6c9a\workspace\transformed\postgrest-kt-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.4.3@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\e31b9501b8ab98c724629c23656d5ec2\workspace\transformed\gotrue-kt-debug\jars\classes.jar"
+      resolved="io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.4.3"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\e31b9501b8ab98c724629c23656d5ec2\workspace\transformed\gotrue-kt-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.browser:browser:1.8.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\118520e89e6c93d7d5b969e091413843\workspace\transformed\browser-1.8.0\jars\classes.jar"
+      resolved="androidx.browser:browser:1.8.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\118520e89e6c93d7d5b969e091413843\workspace\transformed\browser-1.8.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.core:core:1.12.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9c45b6825824ed2fd45e1e89c9f51f96\workspace\transformed\core-1.12.0\jars\classes.jar"
+      resolved="androidx.core:core:1.12.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9c45b6825824ed2fd45e1e89c9f51f96\workspace\transformed\core-1.12.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="io.github.jan-tennert.supabase:supabase-kt-android-debug:2.4.3@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\68eef00361cd41ffb1a68a3b19e015a8\workspace\transformed\supabase-kt-debug\jars\classes.jar"
+      resolved="io.github.jan-tennert.supabase:supabase-kt-android-debug:2.4.3"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\68eef00361cd41ffb1a68a3b19e015a8\workspace\transformed\supabase-kt-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-process:2.7.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\bc173ac7541ebdac42f36f407be0b2ff\workspace\transformed\lifecycle-process-2.7.0\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-process:2.7.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\bc173ac7541ebdac42f36f407be0b2ff\workspace\transformed\lifecycle-process-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\853429a14a2e727a55cb37a9d03d98b1\workspace\transformed\lifecycle-livedata-core-ktx-2.7.0\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\853429a14a2e727a55cb37a9d03d98b1\workspace\transformed\lifecycle-livedata-core-ktx-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-livedata:2.7.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\27ab6a0c69fc779d29abbe71971b50bd\workspace\transformed\lifecycle-livedata-2.7.0\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-livedata:2.7.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\27ab6a0c69fc779d29abbe71971b50bd\workspace\transformed\lifecycle-livedata-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-viewmodel:2.7.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\f728b465f221c05b4569db62395ace36\workspace\transformed\lifecycle-viewmodel-2.7.0\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-viewmodel:2.7.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\f728b465f221c05b4569db62395ace36\workspace\transformed\lifecycle-viewmodel-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-runtime:2.7.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\40b51ea8fa17d1991c2fd06949f30c91\workspace\transformed\lifecycle-runtime-2.7.0\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-runtime:2.7.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\40b51ea8fa17d1991c2fd06949f30c91\workspace\transformed\lifecycle-runtime-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-livedata-core:2.7.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9742f88cf99c8a660ad2c7b54d9ab102\workspace\transformed\lifecycle-livedata-core-2.7.0\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-livedata-core:2.7.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9742f88cf99c8a660ad2c7b54d9ab102\workspace\transformed\lifecycle-livedata-core-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.lifecycle:lifecycle-common:2.7.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\androidx.lifecycle\lifecycle-common\2.7.0\85334205d65cca70ed0109c3acbd29e22a2d9cb1\lifecycle-common-2.7.0.jar"
+      resolved="androidx.lifecycle:lifecycle-common:2.7.0"/>
+  <library
+      name="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\67b542aaf63195b2429bf89389d79e5c\workspace\transformed\lifecycle-viewmodel-savedstate-2.7.0\jars\classes.jar"
+      resolved="androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\67b542aaf63195b2429bf89389d79e5c\workspace\transformed\lifecycle-viewmodel-savedstate-2.7.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.core:core-ktx:1.12.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\b310db7d9cef349e1ffdab5b987c37de\workspace\transformed\core-ktx-1.12.0\jars\classes.jar"
+      resolved="androidx.core:core-ktx:1.12.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\b310db7d9cef349e1ffdab5b987c37de\workspace\transformed\core-ktx-1.12.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.core:core-splashscreen:1.0.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\1fe5e74228a6abb2152bd27f5fa249e8\workspace\transformed\core-splashscreen-1.0.1\jars\classes.jar"
+      resolved="androidx.core:core-splashscreen:1.0.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\1fe5e74228a6abb2152bd27f5fa249e8\workspace\transformed\core-splashscreen-1.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test:runner:1.5.2@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\0581c1ea91e879e9a580f2355676e6a8\workspace\transformed\runner-1.5.2\jars\classes.jar"
+      resolved="androidx.test:runner:1.5.2"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\0581c1ea91e879e9a580f2355676e6a8\workspace\transformed\runner-1.5.2"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test.services:storage:1.4.2@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\6d5345563e278887ed45f201d1d9f6c4\workspace\transformed\storage-1.4.2\jars\classes.jar"
+      resolved="androidx.test.services:storage:1.4.2"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\6d5345563e278887ed45f201d1d9f6c4\workspace\transformed\storage-1.4.2"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test:monitor:1.6.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\0adc65d98e2ead9fe8f5f3398b8d9cc8\workspace\transformed\monitor-1.6.1\jars\classes.jar"
+      resolved="androidx.test:monitor:1.6.1"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\0adc65d98e2ead9fe8f5f3398b8d9cc8\workspace\transformed\monitor-1.6.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.test:annotation:1.0.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8702bf6154ce611eca7eb7f0d7a8fc9a\workspace\transformed\annotation-1.0.1\jars\classes.jar"
+      resolved="androidx.test:annotation:1.0.1"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8702bf6154ce611eca7eb7f0d7a8fc9a\workspace\transformed\annotation-1.0.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.annotation:annotation-experimental:1.4.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\863364e24bab36d34a47012ba2de8255\workspace\transformed\annotation-experimental-1.4.0\jars\classes.jar"
+      resolved="androidx.annotation:annotation-experimental:1.4.0"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\863364e24bab36d34a47012ba2de8255\workspace\transformed\annotation-experimental-1.4.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-serialization-kotlinx-json-jvm\2.3.11\af0bc6f7ce125f8d3ddb0bc95273c3154447b618\ktor-serialization-kotlinx-json-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-serialization-kotlinx-json-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-serialization-kotlinx-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-serialization-kotlinx-jvm\2.3.11\cfb1cc8db157f49fca372d4cf860b5dc7fe42623\ktor-serialization-kotlinx-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-serialization-kotlinx-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.6.3@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-serialization-core-jvm\1.6.3\6b6c17d0312ba7192893adea9d52959941d0119b\kotlinx-serialization-core-jvm-1.6.3.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.6.3"
+      provided="true"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.3@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-serialization-json-jvm\1.6.3\2241746853abf04073e3ab0dcd9e6729d363b313\kotlinx-serialization-json-jvm-1.6.3.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.3"
+      provided="true"/>
+  <library
+      name="androidx.cardview:cardview:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9653f6611974b1620d7f581066da3c94\workspace\transformed\cardview-1.0.0\jars\classes.jar"
+      resolved="androidx.cardview:cardview:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9653f6611974b1620d7f581066da3c94\workspace\transformed\cardview-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.cursoradapter:cursoradapter:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\6864f52f149cdbf9db1a41b99eb03526\workspace\transformed\cursoradapter-1.0.0\jars\classes.jar"
+      resolved="androidx.cursoradapter:cursoradapter:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\6864f52f149cdbf9db1a41b99eb03526\workspace\transformed\cursoradapter-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.concurrent:concurrent-futures:1.1.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\androidx.concurrent\concurrent-futures\1.1.0\50b7fb98350d5f42a4e49704b03278542293ba48\concurrent-futures-1.1.0.jar"
+      resolved="androidx.concurrent:concurrent-futures:1.1.0"/>
+  <library
+      name="androidx.versionedparcelable:versionedparcelable:1.1.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\bcf807ede907cc7c582c9ea83cd96d22\workspace\transformed\versionedparcelable-1.1.1\jars\classes.jar"
+      resolved="androidx.versionedparcelable:versionedparcelable:1.1.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\bcf807ede907cc7c582c9ea83cd96d22\workspace\transformed\versionedparcelable-1.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.collection:collection:1.1.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\androidx.collection\collection\1.1.0\1f27220b47669781457de0d600849a5de0e89909\collection-1.1.0.jar"
+      resolved="androidx.collection:collection:1.1.0"
+      provided="true"/>
+  <library
+      name="androidx.savedstate:savedstate:1.2.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\1ea0b0c7ae5bd89414a3f9decf9bac82\workspace\transformed\savedstate-1.2.1\jars\classes.jar"
+      resolved="androidx.savedstate:savedstate:1.2.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\1ea0b0c7ae5bd89414a3f9decf9bac82\workspace\transformed\savedstate-1.2.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.interpolator:interpolator:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\709a9cc03122e74269c7681581835d42\workspace\transformed\interpolator-1.0.0\jars\classes.jar"
+      resolved="androidx.interpolator:interpolator:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\709a9cc03122e74269c7681581835d42\workspace\transformed\interpolator-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.documentfile:documentfile:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\1efacf73bf32a98fd9cf7d144d24c469\workspace\transformed\documentfile-1.0.0\jars\classes.jar"
+      resolved="androidx.documentfile:documentfile:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\1efacf73bf32a98fd9cf7d144d24c469\workspace\transformed\documentfile-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\14db3030f67f5a026d2e51dda1b90a10\workspace\transformed\localbroadcastmanager-1.0.0\jars\classes.jar"
+      resolved="androidx.localbroadcastmanager:localbroadcastmanager:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\14db3030f67f5a026d2e51dda1b90a10\workspace\transformed\localbroadcastmanager-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.print:print:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ae58aba5e0ab27270231aae60b1deb6c\workspace\transformed\print-1.0.0\jars\classes.jar"
+      resolved="androidx.print:print:1.0.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ae58aba5e0ab27270231aae60b1deb6c\workspace\transformed\print-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.arch.core:core-runtime:2.2.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\72a0fb13c865669c5e607be9ae5468fd\workspace\transformed\core-runtime-2.2.0\jars\classes.jar"
+      resolved="androidx.arch.core:core-runtime:2.2.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\72a0fb13c865669c5e607be9ae5468fd\workspace\transformed\core-runtime-2.2.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="androidx.arch.core:core-common:2.2.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\androidx.arch.core\core-common\2.2.0\5e1b8b81dfd5f52c56a8d53b18ca759c19a301f3\core-common-2.2.0.jar"
+      resolved="androidx.arch.core:core-common:2.2.0"
+      provided="true"/>
+  <library
+      name="androidx.annotation:annotation-jvm:1.6.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\androidx.annotation\annotation-jvm\1.6.0\a7257339a052df0f91433cf9651231bbb802b502\annotation-jvm-1.6.0.jar"
+      resolved="androidx.annotation:annotation-jvm:1.6.0"/>
+  <library
+      name="io.ktor:ktor-client-android-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-client-android-jvm\2.3.11\cfd5bb2d52b06cd8d8a9a51d786b7f3bdd2781eb\ktor-client-android-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-client-android-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-client-content-negotiation-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-client-content-negotiation-jvm\2.3.11\2f739fb5e47be0158b174fefd1bb5a827fbc3243\ktor-client-content-negotiation-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-client-content-negotiation-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-client-core-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-client-core-jvm\2.3.11\1ead4100b66a375ccc808bede2e2c1e480c015f\ktor-client-core-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-client-core-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-events-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-events-jvm\2.3.11\e6a6d901927636a1fad5617397f5d40d2fc1d54b\ktor-events-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-events-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-websocket-serialization-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-websocket-serialization-jvm\2.3.11\195426b52d1647738a12022d1e0728326940a358\ktor-websocket-serialization-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-websocket-serialization-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-serialization-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-serialization-jvm\2.3.11\5fd3c07683c145e49ff26d22af898178f20d813d\ktor-serialization-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-serialization-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-websockets-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-websockets-jvm\2.3.11\23bd6a7d3d1fed4ffb56a08f93e72eadb9818a1b\ktor-websockets-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-websockets-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-http-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-http-jvm\2.3.11\80eaa88b1c5f966ef87ca205bb05beb0e50cf99f\ktor-http-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-http-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-utils-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-utils-jvm\2.3.11\db227e84b9b155891262f7376ad22b6fb9e4ae6\ktor-utils-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-utils-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="io.ktor:ktor-io-jvm:2.3.11@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\io.ktor\ktor-io-jvm\2.3.11\a129eccdd57a710f402661c89498abdd52107e6a\ktor-io-jvm-2.3.11.jar"
+      resolved="io.ktor:ktor-io-jvm:2.3.11"
+      provided="true"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk8\1.8.22\b25c86d47d6b962b9cf0f8c3f320c8a10eea3dd1\kotlin-stdlib-jdk8-1.8.22.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22"
+      provided="true"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.8.22\4dabb8248310d833bb6a8b516024a91fd3d275c\kotlin-stdlib-jdk7-1.8.22.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.22"
+      provided="true"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-reflect:2.0.0-RC3@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-reflect\2.0.0-RC3\2de9acd396986f0130a7015ca18caa593915b077\kotlin-reflect-2.0.0-RC3.jar"
+      resolved="org.jetbrains.kotlin:kotlin-reflect:2.0.0-RC3"
+      provided="true"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.8.1@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-jdk8\1.8.1\a9c5828df815ab41dd9063fda549715c41e8bfab\kotlinx-coroutines-jdk8-1.8.1.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.8.1"
+      provided="true"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.1@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-core-jvm\1.8.1\bb0e192bd7c2b6b8217440d36e9758e377e450\kotlinx-coroutines-core-jvm-1.8.1.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.1"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-coroutines-android\1.8.1\73e2acdd18df99dd4849d99f188dff529fc0afe0\kotlinx-coroutines-android-1.8.1.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1"/>
+  <library
+      name="com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\39ea84c2dec1e33eda8db177a3444f22\workspace\transformed\multiplatform-settings-no-arg-debug\jars\classes.jar"
+      resolved="com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\39ea84c2dec1e33eda8db177a3444f22\workspace\transformed\multiplatform-settings-no-arg-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.russhwolf:multiplatform-settings-coroutines-android-debug:1.1.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9125d1b00e94a42c4ef68ba0b5f46ab9\workspace\transformed\multiplatform-settings-coroutines-debug\jars\classes.jar"
+      resolved="com.russhwolf:multiplatform-settings-coroutines-android-debug:1.1.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9125d1b00e94a42c4ef68ba0b5f46ab9\workspace\transformed\multiplatform-settings-coroutines-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlinx:kotlinx-datetime-jvm:0.6.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\kotlinx-datetime-jvm\0.6.0\a6362032556c0fa4a06be6105a21e944f120fd2d\kotlinx-datetime-jvm-0.6.0.jar"
+      resolved="org.jetbrains.kotlinx:kotlinx-datetime-jvm:0.6.0"
+      provided="true"/>
+  <library
+      name="co.touchlab:kermit-android-debug:2.0.3@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\36099629b4a819afe9968b7ddb70466f\workspace\transformed\kermit-debug\jars\classes.jar"
+      resolved="co.touchlab:kermit-android-debug:2.0.3"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\36099629b4a819afe9968b7ddb70466f\workspace\transformed\kermit-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.russhwolf:multiplatform-settings-android-debug:1.1.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\01a0f4f517eee123611cb86214f8d8e0\workspace\transformed\multiplatform-settings-debug\jars\classes.jar"
+      resolved="com.russhwolf:multiplatform-settings-android-debug:1.1.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\01a0f4f517eee123611cb86214f8d8e0\workspace\transformed\multiplatform-settings-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="co.touchlab:kermit-core-android-debug:2.0.3@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9bd46b6b699c8d60a66fe713db353118\workspace\transformed\kermit-core-debug\jars\classes.jar"
+      resolved="co.touchlab:kermit-core-android-debug:2.0.3"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9bd46b6b699c8d60a66fe713db353118\workspace\transformed\kermit-core-debug"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlin:kotlin-stdlib:2.2.10@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\2.2.10\30de6faa127a4a012db8e71bf1b9c0a99b1402b2\kotlin-stdlib-2.2.10.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:2.2.10"/>
+  <library
+      name="androidx.constraintlayout:constraintlayout:2.1.4@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\63daf8caf5aa00e960dd3d24b4e2ce03\workspace\transformed\constraintlayout-2.1.4\jars\classes.jar"
+      resolved="androidx.constraintlayout:constraintlayout:2.1.4"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\63daf8caf5aa00e960dd3d24b4e2ce03\workspace\transformed\constraintlayout-2.1.4"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="de.hdodenhof:circleimageview:3.1.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8063c03b14cc98f4f749dcbb970fe4dd\workspace\transformed\circleimageview-3.1.0\jars\classes.jar"
+      resolved="de.hdodenhof:circleimageview:3.1.0"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\8063c03b14cc98f4f749dcbb970fe4dd\workspace\transformed\circleimageview-3.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="junit:junit:4.13.2@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\junit\junit\4.13.2\8ac9e16d933b6fb43bc7f576336b8f4d7eb5ba12\junit-4.13.2.jar"
+      resolved="junit:junit:4.13.2"/>
+  <library
+      name="org.hamcrest:hamcrest-integration:1.3@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
+      resolved="org.hamcrest:hamcrest-integration:1.3"/>
+  <library
+      name="org.hamcrest:hamcrest-library:1.3@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
+      resolved="org.hamcrest:hamcrest-library:1.3"/>
+  <library
+      name="org.hamcrest:hamcrest-core:1.3@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+      resolved="org.hamcrest:hamcrest-core:1.3"/>
+  <library
+      name="org.jetbrains:annotations:23.0.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\23.0.0\8cc20c07506ec18e0834947b84a864bfc094484e\annotations-23.0.0.jar"
+      resolved="org.jetbrains:annotations:23.0.0"/>
+  <library
+      name="androidx.tracing:tracing:1.0.0@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\668a8714f27bef5f002d262d035c8254\workspace\transformed\tracing-1.0.0\jars\classes.jar"
+      resolved="androidx.tracing:tracing:1.0.0"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\668a8714f27bef5f002d262d035c8254\workspace\transformed\tracing-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.google.code.findbugs:jsr305:2.0.2@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.2\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.2.jar"
+      resolved="com.google.code.findbugs:jsr305:2.0.2"/>
+  <library
+      name="com.google.guava:listenablefuture:1.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\1.0\c949a840a6acbc5268d088e47b04177bf90b3cad\listenablefuture-1.0.jar"
+      resolved="com.google.guava:listenablefuture:1.0"/>
+  <library
+      name="androidx.test.espresso:espresso-idling-resource:3.5.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\650f664b73be32fc99d3e227014cf7d3\workspace\transformed\espresso-idling-resource-3.5.1\jars\classes.jar"
+      resolved="androidx.test.espresso:espresso-idling-resource:3.5.1"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\650f664b73be32fc99d3e227014cf7d3\workspace\transformed\espresso-idling-resource-3.5.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.squareup:javawriter:2.1.1@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+      resolved="com.squareup:javawriter:2.1.1"/>
+  <library
+      name="javax.inject:javax.inject:1@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+      resolved="javax.inject:javax.inject:1"/>
+  <library
+      name="androidx.resourceinspection:resourceinspection-annotation:1.0.1@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\androidx.resourceinspection\resourceinspection-annotation\1.0.1\8c21f8ff5d96d5d52c948707f7e4d6ca6773feef\resourceinspection-annotation-1.0.1.jar"
+      resolved="androidx.resourceinspection:resourceinspection-annotation:1.0.1"
+      provided="true"/>
+  <library
+      name="org.slf4j:slf4j-api:1.7.36@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.36\6c62681a2f655b49963a5983b8b0950a6120ae14\slf4j-api-1.7.36.jar"
+      resolved="org.slf4j:slf4j-api:1.7.36"
+      provided="true"/>
+  <library
+      name="androidx.startup:startup-runtime:1.1.1@aar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\4cc03128863dcb79132e79b74db93569\workspace\transformed\startup-runtime-1.1.1\jars\classes.jar"
+      resolved="androidx.startup:startup-runtime:1.1.1"
+      provided="true"
+      folder="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\4cc03128863dcb79132e79b74db93569\workspace\transformed\startup-runtime-1.1.1"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="org.jetbrains.kotlinx:atomicfu-jvm:0.24.0@jar"
+      jars="C:\Users\MyBook Hype AMD\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlinx\atomicfu-jvm\0.24.0\a4601dc42dceb031a586058e8356ff778a57dea0\atomicfu-jvm-0.24.0.jar"
+      resolved="org.jetbrains.kotlinx:atomicfu-jvm:0.24.0"
+      provided="true"/>
+</libraries>

@@ -1,5 +1,5 @@
-com.kime.seminar.test.app-annotation-experimental-1.3.0-0 C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\23e802c75b2283803a2baf5b9769ee40\workspace\transformed\annotation-experimental-1.3.0\res
-com.kime.seminar.test.app-core-1.5.0-1 C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\5605da443ee3c106bedef434a2b1473d\workspace\transformed\core-1.5.0\res
+com.kime.seminar.test.app-core-1.5.0-0 C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\5605da443ee3c106bedef434a2b1473d\workspace\transformed\core-1.5.0\res
+com.kime.seminar.test.app-annotation-experimental-1.4.0-1 C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\863364e24bab36d34a47012ba2de8255\workspace\transformed\annotation-experimental-1.4.0\res
 com.kime.seminar.test.app-androidTest-2 C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\generated\res\resValues\androidTest\debug
 com.kime.seminar.test.app-updated_navigation_xml-3 C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\generated\updated_navigation_xml\debugAndroidTest
 com.kime.seminar.test.app-mergeDebugAndroidTestResources-4 C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir

@@ -3,24 +3,24 @@
 3    package="com.kime.seminar.test" >
 4
 5    <uses-sdk
-5-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:5:5-74
+5-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:5:5-74
 6        android:minSdkVersion="26"
-6-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:5:15-41
+6-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:5:15-41
 7        android:targetSdkVersion="34" />
-7-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:5:42-71
+7-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:5:42-71
 8
 9    <instrumentation
-9-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:7:5-11:66
+9-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:7:5-11:66
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:7:22-76
+10-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:7:22-76
 11        android:functionalTest="false"
-11-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:10:22-52
+11-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:10:22-52
 12        android:handleProfiling="false"
-12-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:9:22-53
+12-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:9:22-53
 13        android:label="Tests for com.kime.seminar"
-13-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:11:22-64
+13-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:11:22-64
 14        android:targetPackage="com.kime.seminar" />
-14-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest1131263989459563599.xml:8:22-62
+14-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\build\intermediates\tmp\manifest\androidTest\debug\tempFile1ProcessTestManifest13819801514191351056.xml:8:22-62
 15
 16    <uses-permission android:name="android.permission.REORDER_TASKS" />
 16-->[androidx.test:core:1.5.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\5605da443ee3c106bedef434a2b1473d\workspace\transformed\core-1.5.0\AndroidManifest.xml:24:5-72

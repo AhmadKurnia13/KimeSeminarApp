@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.9.0'
 }
 
 android {
@@ -49,4 +50,21 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // --- LIBRARY SUPABASE & KTOR ---
+    // Supabase BOM untuk memastikan versi seragam
+    implementation(platform("io.github.jan-tennert.supabase:bom:2.4.3"))
+
+    // Module Database (PostgREST)
+    implementation("io.github.jan-tennert.supabase:postgrest-kt")
+
+    // Ktor Client (Wajib untuk koneksi internet)
+    implementation("io.ktor:ktor-client-android:2.3.11")
+    implementation("io.ktor:ktor-client-core:2.3.11")
+
+    // Kotlinx Serialization untuk JSON
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
+
+    // Library Otentikasi (Login/Register) Supabase
+    implementation("io.github.jan-tennert.supabase:gotrue-kt")
 }

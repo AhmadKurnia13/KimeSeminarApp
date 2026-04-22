@@ -1,0 +1,30 @@
+<variant
+    name="debug"
+    package="com.kime.seminar"
+    minSdkVersion="26"
+    targetSdkVersion="34"
+    debuggable="true"
+    mergedManifest="build\intermediates\merged_manifest\debug\processDebugMainManifest\AndroidManifest.xml"
+    partialResultsDir="build\intermediates\android_test_lint_partial_results\debug\lintAnalyzeDebugAndroidTest\out"
+    desugaredMethodsFiles="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\4a2a152f6a960708bebcb457a14e3d0e\workspace\transformed\D8BackportedDesugaredMethods.txt">
+  <buildFeatures
+      viewBinding="true"/>
+  <sourceProviders>
+  </sourceProviders>
+  <testSourceProviders>
+    <sourceProvider
+        manifests="src\androidTest\AndroidManifest.xml"
+        javaDirectories="src\androidTest\java;src\androidTestDebug\java;src\androidTest\kotlin;src\androidTestDebug\kotlin"
+        resDirectories="src\androidTest\res;src\androidTestDebug\res"
+        assetsDirectories="src\androidTest\assets;src\androidTestDebug\assets"
+        androidTest="true"/>
+  </testSourceProviders>
+  <testFixturesSourceProviders>
+  </testFixturesSourceProviders>
+  <artifact
+      type="INSTRUMENTATION_TEST"
+      applicationId="com.kime.seminar.test"
+      generatedResourceFolders="build\generated\res\resValues\androidTest\debug"
+      desugaredMethodsFiles="C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\4a2a152f6a960708bebcb457a14e3d0e\workspace\transformed\D8BackportedDesugaredMethods.txt">
+  </artifact>
+</variant>

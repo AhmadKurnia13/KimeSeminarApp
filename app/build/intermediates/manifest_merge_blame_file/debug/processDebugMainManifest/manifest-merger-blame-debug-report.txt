@@ -24,7 +24,7 @@
 17-->[androidx.core:core:1.12.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\9c45b6825824ed2fd45e1e89c9f51f96\workspace\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:6:5-47:19
+19-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:6:5-57:19
 20        android:allowBackup="true"
 20-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:7:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -39,130 +39,157 @@
 26-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:9:9-54
 27        android:supportsRtl="true"
 27-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:11:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.KimeSeminar" >
-29-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:12:9-49
-30        <activity
-30-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:14:9-22:20
-31            android:name="com.kime.seminar.SplashActivity"
-31-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:15:13-43
-32            android:exported="true"
-32-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:16:13-36
-33            android:theme="@style/Theme.KimeSeminar.Splash" >
-33-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:17:13-60
-34            <intent-filter>
-34-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:18:13-21:29
-35                <action android:name="android.intent.action.MAIN" />
-35-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:19:17-69
-35-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:19:25-66
-36
-37                <category android:name="android.intent.category.LAUNCHER" />
-37-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:20:17-77
-37-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:20:27-74
-38            </intent-filter>
-39        </activity>
-40        <activity
-40-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:24:9-27:58
-41            android:name="com.kime.seminar.LoginActivity"
-41-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:25:13-42
-42            android:exported="false"
-42-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:26:13-37
-43            android:windowSoftInputMode="adjustResize" />
-43-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:27:13-55
-44        <activity
-44-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:29:9-32:58
-45            android:name="com.kime.seminar.RegisterActivity"
-45-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:30:13-45
-46            android:exported="false"
-46-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:31:13-37
-47            android:windowSoftInputMode="adjustResize" />
-47-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:32:13-55
-48        <activity
-48-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:34:9-36:40
-49            android:name="com.kime.seminar.HomeActivity"
-49-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:35:13-41
-50            android:exported="false" />
-50-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:36:13-37
-51        <activity
-51-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:38:9-41:58
-52            android:name="com.kime.seminar.FormActivity"
-52-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:39:13-41
-53            android:exported="false"
-53-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:40:13-37
-54            android:windowSoftInputMode="adjustResize" />
-54-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:41:13-55
-55        <activity
-55-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:43:9-45:40
-56            android:name="com.kime.seminar.ResultActivity"
-56-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:44:13-43
-57            android:exported="false" />
-57-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:45:13-37
-58
-59        <provider
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-60            android:name="androidx.startup.InitializationProvider"
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-61            android:authorities="com.kime.seminar.androidx-startup"
-61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-62            android:exported="false" >
-62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-63            <meta-data
-63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-65                android:value="androidx.startup" />
-65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-66            <meta-data
-66-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\c6c3ec463b1962769af0e9e99ec12a94\workspace\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-67-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\c6c3ec463b1962769af0e9e99ec12a94\workspace\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-68                android:value="androidx.startup" />
-68-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\c6c3ec463b1962769af0e9e99ec12a94\workspace\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-69            <meta-data
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-71                android:value="androidx.startup" />
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-72        </provider>
-73
-74        <receiver
-74-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-75            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-76            android:directBootAware="false"
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-77            android:enabled="true"
-77-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-78            android:exported="true"
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-79            android:permission="android.permission.DUMP" >
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-81                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-82            </intent-filter>
-83            <intent-filter>
-83-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-84                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-84-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-85            </intent-filter>
-86            <intent-filter>
-86-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-87                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-88            </intent-filter>
-89            <intent-filter>
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-90                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-91            </intent-filter>
-92        </receiver>
-93    </application>
-94
-95</manifest>
+28        android:theme="@style/Theme.KimeSeminar" >
+28-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:12:9-49
+29        <activity
+29-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:14:9-22:20
+30            android:name="com.kime.seminar.SplashActivity"
+30-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:15:13-43
+31            android:exported="true"
+31-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:16:13-36
+32            android:theme="@style/Theme.KimeSeminar.Splash" >
+32-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:17:13-60
+33            <intent-filter>
+33-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:18:13-21:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:19:17-69
+34-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:19:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:20:17-77
+36-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:20:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:24:9-27:58
+40            android:name="com.kime.seminar.LoginActivity"
+40-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:25:13-42
+41            android:exported="false"
+41-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:26:13-37
+42            android:windowSoftInputMode="adjustResize" />
+42-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:27:13-55
+43        <activity
+43-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:29:9-32:58
+44            android:name="com.kime.seminar.RegisterActivity"
+44-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:30:13-45
+45            android:exported="false"
+45-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:31:13-37
+46            android:windowSoftInputMode="adjustResize" />
+46-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:32:13-55
+47        <activity
+47-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:34:9-36:40
+48            android:name="com.kime.seminar.HomeActivity"
+48-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:35:13-41
+49            android:exported="false" />
+49-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:36:13-37
+50        <activity
+50-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:38:9-41:58
+51            android:name="com.kime.seminar.FormActivity"
+51-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:39:13-41
+52            android:exported="false"
+52-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:40:13-37
+53            android:windowSoftInputMode="adjustResize" />
+53-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:41:13-55
+54        <activity
+54-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:43:9-45:40
+55            android:name="com.kime.seminar.ResultActivity"
+55-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:44:13-43
+56            android:exported="false" />
+56-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:45:13-37
+57        <activity
+57-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:47:9-50:58
+58            android:name="com.kime.seminar.ForgotPasswordActivity"
+58-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:48:13-51
+59            android:exported="false"
+59-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:49:13-37
+60            android:windowSoftInputMode="adjustResize" />
+60-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:50:13-55
+61        <activity
+61-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:52:9-55:58
+62            android:name="com.kime.seminar.ResetPasswordActivity"
+62-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:53:13-50
+63            android:exported="false"
+63-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:54:13-37
+64            android:windowSoftInputMode="adjustResize" />
+64-->C:\Users\MyBook Hype AMD\AndroidStudioProjects\KimeSeminarApp\app\src\main\AndroidManifest.xml:55:13-55
+65
+66        <provider
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+67            android:name="androidx.startup.InitializationProvider"
+67-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+68            android:authorities="com.kime.seminar.androidx-startup"
+68-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+69            android:exported="false" >
+69-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+70            <meta-data
+70-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+71                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+71-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+72                android:value="androidx.startup" />
+72-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\ee8d9ff94b6eabbb905bae0092667ae5\workspace\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+73            <meta-data
+73-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.4.3] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\e31b9501b8ab98c724629c23656d5ec2\workspace\transformed\gotrue-kt-debug\AndroidManifest.xml:14:13-16:52
+74                android:name="io.github.jan.supabase.gotrue.SupabaseInitializer"
+74-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.4.3] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\e31b9501b8ab98c724629c23656d5ec2\workspace\transformed\gotrue-kt-debug\AndroidManifest.xml:15:17-81
+75                android:value="androidx.startup" />
+75-->[io.github.jan-tennert.supabase:gotrue-kt-android-debug:2.4.3] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\e31b9501b8ab98c724629c23656d5ec2\workspace\transformed\gotrue-kt-debug\AndroidManifest.xml:16:17-49
+76            <meta-data
+76-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\bc173ac7541ebdac42f36f407be0b2ff\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+77-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\bc173ac7541ebdac42f36f407be0b2ff\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+78                android:value="androidx.startup" />
+78-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\bc173ac7541ebdac42f36f407be0b2ff\workspace\transformed\lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+81                android:value="androidx.startup" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+82            <meta-data
+82-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\39ea84c2dec1e33eda8db177a3444f22\workspace\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:29:13-31:52
+83                android:name="com.russhwolf.settings.SettingsInitializer"
+83-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\39ea84c2dec1e33eda8db177a3444f22\workspace\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:30:17-74
+84                android:value="androidx.startup" />
+84-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\39ea84c2dec1e33eda8db177a3444f22\workspace\transformed\multiplatform-settings-no-arg-debug\AndroidManifest.xml:31:17-49
+85        </provider>
+86
+87        <receiver
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+88            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+89            android:directBootAware="false"
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+90            android:enabled="true"
+90-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+91            android:exported="true"
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+92            android:permission="android.permission.DUMP" >
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+93            <intent-filter>
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+94                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+95            </intent-filter>
+96            <intent-filter>
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+97                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+98            </intent-filter>
+99            <intent-filter>
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+100                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+101            </intent-filter>
+102            <intent-filter>
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+103                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\MyBook Hype AMD\.gradle\caches\9.2.1\transforms\765ee38c0782c83be2f34b7620e2be1c\workspace\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+104            </intent-filter>
+105        </receiver>
+106    </application>
+107
+108</manifest>

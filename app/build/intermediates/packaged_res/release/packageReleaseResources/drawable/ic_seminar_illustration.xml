@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="160dp"
+    android:viewportWidth="200"
+    android:viewportHeight="160">
+
+    <!-- Presentation screen -->
+    <path
+        android:fillColor="#E8EAF6"
+        android:pathData="M20,20 L180,20 L180,110 L20,110 Z" />
+    <path
+        android:fillColor="#C5CAE9"
+        android:strokeWidth="2"
+        android:strokeColor="#9FA8DA"
+        android:pathData="M20,20 L180,20 L180,110 L20,110 Z" />
+
+    <!-- Screen content - chart bars -->
+    <path android:fillColor="#1A237E" android:pathData="M40,90 L55,90 L55,70 L40,70 Z" />
+    <path android:fillColor="#3F51B5" android:pathData="M60,90 L75,90 L75,55 L60,55 Z" />
+    <path android:fillColor="#FF8F00" android:pathData="M80,90 L95,90 L95,65 L80,65 Z" />
+    <path android:fillColor="#1A237E" android:pathData="M100,90 L115,90 L115,45 L100,45 Z" />
+    <path android:fillColor="#3F51B5" android:pathData="M120,90 L135,90 L135,60 L120,60 Z" />
+
+    <!-- Screen text line -->
+    <path android:fillColor="#9FA8DA" android:pathData="M40,40 L120,40 L120,44 L40,44 Z" />
+    <path android:fillColor="#C5CAE9" android:pathData="M40,48 L90,48 L90,51 L40,51 Z" />
+
+    <!-- Stand -->
+    <path android:fillColor="#9FA8DA" android:pathData="M95,110 L105,110 L110,135 L90,135 Z" />
+    <path android:fillColor="#C5CAE9" android:pathData="M75,135 L125,135 L125,140 L75,140 Z" />
+
+    <!-- Audience person 1 -->
+    <path android:fillColor="#3F51B5" android:pathData="M30,155 A10,10 0 1,1 29.9,155 Z" />
+    <path android:fillColor="#3F51B5" android:pathData="M20,160 Q30,150 40,160 L40,175 L20,175 Z" />
+
+    <!-- Audience person 2 -->
+    <path android:fillColor="#1A237E" android:pathData="M75,155 A10,10 0 1,1 74.9,155 Z" />
+    <path android:fillColor="#1A237E" android:pathData="M65,160 Q75,150 85,160 L85,175 L65,175 Z" />
+
+    <!-- Audience person 3 (center) -->
+    <path android:fillColor="#FF8F00" android:pathData="M120,155 A10,10 0 1,1 119.9,155 Z" />
+    <path android:fillColor="#FF8F00" android:pathData="M110,160 Q120,150 130,160 L130,175 L110,175 Z" />
+
+    <!-- Audience person 4 -->
+    <path android:fillColor="#3F51B5" android:pathData="M165,155 A10,10 0 1,1 164.9,155 Z" />
+    <path android:fillColor="#3F51B5" android:pathData="M155,160 Q165,150 175,160 L175,175 L155,175 Z" />
+
+</vector>
