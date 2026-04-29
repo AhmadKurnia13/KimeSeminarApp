@@ -4,10 +4,14 @@ package com.kime.seminar.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ProgressBar;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -30,6 +34,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final MaterialButton btnRegister;
 
   @NonNull
+  public final CheckBox cbArt;
+
+  @NonNull
+  public final CheckBox cbBusiness;
+
+  @NonNull
+  public final CheckBox cbSports;
+
+  @NonNull
+  public final CheckBox cbTech;
+
+  @NonNull
+  public final TextInputEditText etCity;
+
+  @NonNull
   public final TextInputEditText etConfirmPassword;
 
   @NonNull
@@ -43,6 +62,21 @@ public final class ActivityRegisterBinding implements ViewBinding {
 
   @NonNull
   public final ProgressBar progressRegister;
+
+  @NonNull
+  public final RadioButton rbFemale;
+
+  @NonNull
+  public final RadioButton rbMale;
+
+  @NonNull
+  public final RadioGroup rgGender;
+
+  @NonNull
+  public final AppCompatSpinner spinnerAccountType;
+
+  @NonNull
+  public final TextInputLayout tilCity;
 
   @NonNull
   public final TextInputLayout tilConfirmPassword;
@@ -60,20 +94,34 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextView tvLogin;
 
   private ActivityRegisterBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull MaterialButton btnBack, @NonNull MaterialButton btnRegister,
-      @NonNull TextInputEditText etConfirmPassword, @NonNull TextInputEditText etEmail,
-      @NonNull TextInputEditText etName, @NonNull TextInputEditText etPassword,
-      @NonNull ProgressBar progressRegister, @NonNull TextInputLayout tilConfirmPassword,
-      @NonNull TextInputLayout tilEmail, @NonNull TextInputLayout tilName,
-      @NonNull TextInputLayout tilPassword, @NonNull TextView tvLogin) {
+      @NonNull MaterialButton btnBack, @NonNull MaterialButton btnRegister, @NonNull CheckBox cbArt,
+      @NonNull CheckBox cbBusiness, @NonNull CheckBox cbSports, @NonNull CheckBox cbTech,
+      @NonNull TextInputEditText etCity, @NonNull TextInputEditText etConfirmPassword,
+      @NonNull TextInputEditText etEmail, @NonNull TextInputEditText etName,
+      @NonNull TextInputEditText etPassword, @NonNull ProgressBar progressRegister,
+      @NonNull RadioButton rbFemale, @NonNull RadioButton rbMale, @NonNull RadioGroup rgGender,
+      @NonNull AppCompatSpinner spinnerAccountType, @NonNull TextInputLayout tilCity,
+      @NonNull TextInputLayout tilConfirmPassword, @NonNull TextInputLayout tilEmail,
+      @NonNull TextInputLayout tilName, @NonNull TextInputLayout tilPassword,
+      @NonNull TextView tvLogin) {
     this.rootView = rootView;
     this.btnBack = btnBack;
     this.btnRegister = btnRegister;
+    this.cbArt = cbArt;
+    this.cbBusiness = cbBusiness;
+    this.cbSports = cbSports;
+    this.cbTech = cbTech;
+    this.etCity = etCity;
     this.etConfirmPassword = etConfirmPassword;
     this.etEmail = etEmail;
     this.etName = etName;
     this.etPassword = etPassword;
     this.progressRegister = progressRegister;
+    this.rbFemale = rbFemale;
+    this.rbMale = rbMale;
+    this.rgGender = rgGender;
+    this.spinnerAccountType = spinnerAccountType;
+    this.tilCity = tilCity;
     this.tilConfirmPassword = tilConfirmPassword;
     this.tilEmail = tilEmail;
     this.tilName = tilName;
@@ -120,6 +168,36 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cbArt;
+      CheckBox cbArt = ViewBindings.findChildViewById(rootView, id);
+      if (cbArt == null) {
+        break missingId;
+      }
+
+      id = R.id.cbBusiness;
+      CheckBox cbBusiness = ViewBindings.findChildViewById(rootView, id);
+      if (cbBusiness == null) {
+        break missingId;
+      }
+
+      id = R.id.cbSports;
+      CheckBox cbSports = ViewBindings.findChildViewById(rootView, id);
+      if (cbSports == null) {
+        break missingId;
+      }
+
+      id = R.id.cbTech;
+      CheckBox cbTech = ViewBindings.findChildViewById(rootView, id);
+      if (cbTech == null) {
+        break missingId;
+      }
+
+      id = R.id.etCity;
+      TextInputEditText etCity = ViewBindings.findChildViewById(rootView, id);
+      if (etCity == null) {
+        break missingId;
+      }
+
       id = R.id.etConfirmPassword;
       TextInputEditText etConfirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (etConfirmPassword == null) {
@@ -147,6 +225,36 @@ public final class ActivityRegisterBinding implements ViewBinding {
       id = R.id.progressRegister;
       ProgressBar progressRegister = ViewBindings.findChildViewById(rootView, id);
       if (progressRegister == null) {
+        break missingId;
+      }
+
+      id = R.id.rbFemale;
+      RadioButton rbFemale = ViewBindings.findChildViewById(rootView, id);
+      if (rbFemale == null) {
+        break missingId;
+      }
+
+      id = R.id.rbMale;
+      RadioButton rbMale = ViewBindings.findChildViewById(rootView, id);
+      if (rbMale == null) {
+        break missingId;
+      }
+
+      id = R.id.rgGender;
+      RadioGroup rgGender = ViewBindings.findChildViewById(rootView, id);
+      if (rgGender == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerAccountType;
+      AppCompatSpinner spinnerAccountType = ViewBindings.findChildViewById(rootView, id);
+      if (spinnerAccountType == null) {
+        break missingId;
+      }
+
+      id = R.id.tilCity;
+      TextInputLayout tilCity = ViewBindings.findChildViewById(rootView, id);
+      if (tilCity == null) {
         break missingId;
       }
 
@@ -180,9 +288,10 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityRegisterBinding((CoordinatorLayout) rootView, btnBack, btnRegister,
-          etConfirmPassword, etEmail, etName, etPassword, progressRegister, tilConfirmPassword,
-          tilEmail, tilName, tilPassword, tvLogin);
+      return new ActivityRegisterBinding((CoordinatorLayout) rootView, btnBack, btnRegister, cbArt,
+          cbBusiness, cbSports, cbTech, etCity, etConfirmPassword, etEmail, etName, etPassword,
+          progressRegister, rbFemale, rbMale, rgGender, spinnerAccountType, tilCity,
+          tilConfirmPassword, tilEmail, tilName, tilPassword, tvLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

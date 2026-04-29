@@ -10,20 +10,27 @@ import android.view.View
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.snackbar.Snackbar
 import com.kime.seminar.databinding.ActivityFormBinding
 import java.text.SimpleDateFormat
 import java.util.*
 import io.github.jan.supabase.postgrest.postgrest
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import com.kime.seminar.database.RegistrationRepository
+import com.kime.seminar.database.SeminarRepository
 
 class FormActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFormBinding
     private val calendar = Calendar.getInstance()
+    private lateinit var sessionManager: SessionManager
+    private lateinit var registrationRepository: RegistrationRepository
+    private lateinit var seminarRepository: SeminarRepository
 
-    private val seminars = listOf(
+    private val seminars = mutableListOf(
         "-- Pilih Seminar --",
         "AI & Machine Learning in Industry 4.0",
         "Cybersecurity: Ancaman dan Perlindungan Digital",
@@ -39,18 +46,47 @@ class FormActivity : AppCompatActivity() {
         binding = ActivityFormBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        sessionManager = SessionManager(this)
+        registrationRepository = RegistrationRepository(this)
+        seminarRepository = SeminarRepository(this)
+
         setupToolbar()
-        setupSpinner()
+        loadSeminarsFromDb()
         setupDatePicker()
         setupRealTimeValidation()
         setupClickListeners()
+    }
+
+    private fun loadSeminarsFromDb() {
+        lifecycleScope.launch {
+            try {
+                val localSeminars = seminarRepository.getAllSeminars()
+                if (localSeminars.isNotEmpty()) {
+                    val currentPreselected = intent.getStringExtra("PRESELECTED_SEMINAR")
+                    
+                    seminars.clear()
+                    seminars.add("-- Pilih Seminar --")
+                    localSeminars.forEach { seminars.add(it.title) }
+                    
+                    // Re-add preselected if it's not in DB yet
+                    if (!currentPreselected.isNullOrEmpty() && !seminars.contains(currentPreselected)) {
+                        seminars.add(currentPreselected)
+                    }
+                }
+            } catch (e: Exception) {
+                android.util.Log.e("FormActivity", "Error loading seminars from DB", e)
+            } finally {
+                setupSpinner()
+            }
+        }
     }
 
     suspend fun insertRegistrationData(
         seminarId: String,
         name: String,
         email: String,
-        phone: String
+        phone: String,
+        jenisKelamin: String
     ) {
         withContext(Dispatchers.IO) {
             // 1. Bungkus data ke dalam format Data Class
@@ -58,7 +94,8 @@ class FormActivity : AppCompatActivity() {
                 seminarId = seminarId,
                 participantName = name,
                 participantEmail = email,
-                participantPhone = phone
+                participantPhone = phone,
+                jenisKelamin = jenisKelamin
             )
 
             // 2. Kirim ke tabel "registrations" di Supabase
@@ -80,6 +117,15 @@ class FormActivity : AppCompatActivity() {
         val adapter = ArrayAdapter(this, R.layout.item_spinner, seminars)
         adapter.setDropDownViewResource(R.layout.item_spinner_dropdown)
         binding.spinnerSeminar.adapter = adapter
+
+        // Set selection if preselected
+        val preselectedSeminar = intent.getStringExtra("PRESELECTED_SEMINAR")
+        if (!preselectedSeminar.isNullOrEmpty()) {
+            val index = seminars.indexOf(preselectedSeminar)
+            if (index != -1) {
+                binding.spinnerSeminar.setSelection(index)
+            }
+        }
     }
 
     private fun setupDatePicker() {
@@ -115,12 +161,6 @@ class FormActivity : AppCompatActivity() {
 
         // Nomor HP
         binding.etNoHp.addTextChangedListener(createWatcher { validateNoHp(it) })
-
-        // Versi Soal
-        binding.etVersiSoal.addTextChangedListener(createWatcher { validateVersiSoal(it) })
-
-        // Halaman
-        binding.etHalaman.addTextChangedListener(createWatcher { validateHalaman(it) })
     }
 
     private fun createWatcher(validate: (String) -> Unit): TextWatcher {
@@ -193,30 +233,6 @@ class FormActivity : AppCompatActivity() {
         }
     }
 
-    private fun validateVersiSoal(value: String): Boolean {
-        return when {
-            value.isEmpty() -> {
-                binding.tilVersiSoal.error = "Versi soal tidak boleh kosong"
-                false
-            }
-            else -> {
-                binding.tilVersiSoal.error = null; binding.tilVersiSoal.isErrorEnabled = false; true
-            }
-        }
-    }
-
-    private fun validateHalaman(value: String): Boolean {
-        return when {
-            value.isEmpty() -> {
-                binding.tilHalaman.error = "Halaman tidak boleh kosong"
-                false
-            }
-            else -> {
-                binding.tilHalaman.error = null; binding.tilHalaman.isErrorEnabled = false; true
-            }
-        }
-    }
-
     private fun validateGender(): Boolean {
         return if (binding.rgJenisKelamin.checkedRadioButtonId == -1) {
             Snackbar.make(binding.root, "⚠️ Pilih jenis kelamin terlebih dahulu", Snackbar.LENGTH_SHORT).show()
@@ -266,32 +282,28 @@ class FormActivity : AppCompatActivity() {
         val email = binding.etEmail.text.toString().trim()
         val noHp = binding.etNoHp.text.toString().trim()
         val tanggal = binding.etTanggal.text.toString().trim()
-        val versiSoal = binding.etVersiSoal.text.toString().trim()
-        val halaman = binding.etHalaman.text.toString().trim()
 
         val v1 = validateNama(nama)
         val v2 = validateEmail(email)
         val v3 = validateNoHp(noHp)
         val v4 = validateGender()
         val v5 = validateTanggal()
-        val v6 = validateVersiSoal(versiSoal)
-        val v7 = validateHalaman(halaman)
-        val v8 = validateSeminar()
-        val v9 = validateCheckbox()
+        val v6 = validateSeminar()
+        val v7 = validateCheckbox()
 
-        if (!v1 || !v2 || !v3 || !v4 || !v5 || !v6 || !v7 || !v8 || !v9) {
+        if (!v1 || !v2 || !v3 || !v4 || !v5 || !v6 || !v7) {
             // Scroll ke atas jika ada error
             binding.scrollView.smoothScrollTo(0, 0)
             return
         }
 
         // Tampilkan dialog konfirmasi
-        showConfirmationDialog(nama, email, noHp, tanggal, versiSoal, halaman)
+        showConfirmationDialog(nama, email, noHp, tanggal)
     }
 
     private fun showConfirmationDialog(
         nama: String, email: String, noHp: String,
-        tanggal: String, versiSoal: String, halaman: String
+        tanggal: String
     ) {
         val jenisKelamin = if (binding.rgJenisKelamin.checkedRadioButtonId == R.id.rbLakiLaki)
             "Laki-laki" else "Perempuan"
@@ -305,8 +317,6 @@ class FormActivity : AppCompatActivity() {
             📱 No. HP    : $noHp
             ⚥ Kelamin   : $jenisKelamin
             📅 Tanggal   : $tanggal
-            📝 Versi     : $versiSoal
-            📄 Halaman   : $halaman
             🎓 Seminar   : $seminar
             
             Apakah data yang Anda isi sudah benar?
@@ -316,7 +326,49 @@ class FormActivity : AppCompatActivity() {
             .setTitle("Konfirmasi Pendaftaran")
             .setMessage(message)
             .setPositiveButton("✅  Ya, Daftar!") { _, _ ->
-                goToResult(nama, email, noHp, jenisKelamin, seminar, tanggal, versiSoal, halaman)
+                lifecycleScope.launch {
+                    val userId = sessionManager.getCurrentUserId()
+                    var seminarDetails = seminarRepository.getSeminarByTitle(seminar)
+                    
+                    // Fuzzy match fallback if not found exactly
+                    if (seminarDetails == null) {
+                        val allSeminars = seminarRepository.getAllSeminars()
+                        seminarDetails = allSeminars.find { it.title.equals(seminar, ignoreCase = true) }
+                    }
+
+                    if (userId != -1L && seminarDetails != null) {
+                        // Insert locally
+                        val localRegistration = com.kime.seminar.database.Registration(
+                            userId = userId,
+                            seminarId = seminarDetails.id,
+                            registrationDate = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
+                        )
+                        registrationRepository.insertRegistration(localRegistration)
+
+                        // Insert to Supabase (Remote)
+                        try {
+                            insertRegistrationData(
+                                seminarId = seminarDetails.id.toString(),
+                                name = nama,
+                                email = email,
+                                phone = noHp,
+                                jenisKelamin = jenisKelamin
+                            )
+                        } catch (e: Exception) {
+                            android.util.Log.e("FormActivity", "Supabase insert failed", e)
+                        }
+                        
+                        goToResult(nama, email, noHp, jenisKelamin, seminar, tanggal)
+                    } else {
+                        val errorMsg = when {
+                            userId == -1L -> "User ID tidak ditemukan. Silakan login ulang."
+                            seminarDetails == null -> "Seminar '$seminar' tidak ditemukan di database."
+                            else -> "Data tidak valid"
+                        }
+                        android.util.Log.e("FormActivity", "Registration failed: $errorMsg (userId=$userId, seminar=$seminar)")
+                        Snackbar.make(binding.root, "Gagal mendaftar: $errorMsg", Snackbar.LENGTH_LONG).show()
+                    }
+                }
             }
             .setNegativeButton("❌  Periksa Lagi", null)
             .setCancelable(false)
@@ -325,8 +377,7 @@ class FormActivity : AppCompatActivity() {
 
     private fun goToResult(
         nama: String, email: String, noHp: String,
-        jenisKelamin: String, seminar: String, tanggal: String,
-        versiSoal: String, halaman: String
+        jenisKelamin: String, seminar: String, tanggal: String
     ) {
         val intent = Intent(this, ResultActivity::class.java).apply {
             putExtra("NAMA", nama)
@@ -335,8 +386,6 @@ class FormActivity : AppCompatActivity() {
             putExtra("JENIS_KELAMIN", jenisKelamin)
             putExtra("SEMINAR", seminar)
             putExtra("TANGGAL", tanggal)
-            putExtra("VERSI_SOAL", versiSoal)
-            putExtra("HALAMAN", halaman)
         }
         startActivity(intent)
         overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
@@ -348,15 +397,13 @@ class FormActivity : AppCompatActivity() {
         binding.etEmail.text?.clear()
         binding.etNoHp.text?.clear()
         binding.etTanggal.text?.clear()
-        binding.etVersiSoal.text?.clear()
-        binding.etHalaman.text?.clear()
         binding.rgJenisKelamin.clearCheck()
         binding.spinnerSeminar.setSelection(0)
         binding.cbPersetujuan.isChecked = false
 
         listOf(
             binding.tilNama, binding.tilEmail, binding.tilNoHp,
-            binding.tilTanggal, binding.tilVersiSoal, binding.tilHalaman
+            binding.tilTanggal
         ).forEach {
             it.error = null
             it.isErrorEnabled = false

@@ -216,51 +216,6 @@
                             android:paddingBottom="14dp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <!-- Versi Soal -->
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/tilVersiSoal"
-                        style="@style/KimeTextInputLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="14dp"
-                        android:hint="Versi Soal *"
-                        app:startIconDrawable="@drawable/ic_badge"
-                        app:startIconTint="@color/kime_primary"
-                        app:helperText="Contoh: v1, v2, A, B"
-                        app:helperTextEnabled="true">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etVersiSoal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="textCapCharacters"
-                            android:imeOptions="actionNext"
-                            android:textSize="15sp"
-                            android:paddingTop="14dp"
-                            android:paddingBottom="14dp" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <!-- Halaman -->
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:id="@+id/tilHalaman"
-                        style="@style/KimeTextInputLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="14dp"
-                        android:hint="Halaman *"
-                        app:startIconDrawable="@drawable/ic_school"
-                        app:startIconTint="@color/kime_primary"
-                        app:helperText="Contoh: 1-50, 51-100"
-                        app:helperTextEnabled="true">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etHalaman"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:inputType="text"
-                            android:imeOptions="actionNext"
-                            android:textSize="15sp"
-                            android:paddingTop="14dp"
-                            android:paddingBottom="14dp" />
-                    </com.google.android.material.textfield.TextInputLayout>
 
                     <!-- Pilihan Seminar -->
                     <TextView

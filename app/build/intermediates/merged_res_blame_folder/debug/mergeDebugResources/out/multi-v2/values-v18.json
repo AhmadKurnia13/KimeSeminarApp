@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.kime.seminar.app-mergeDebugResources-33:/values-v18/values-v18.xml",
+            "outputFile": "com.kime.seminar.app-mergeDebugResources-54:/values-v18/values-v18.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\caches\\9.2.1\\transforms\\3de327505ac53bbe86ebdb26d7cece77\\workspace\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
+                    "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\caches\\9.4.1\\transforms\\3aac89beb2053db0e4607eab55011cd4\\transformed\\appcompat-1.6.1\\res\\values-v18\\values-v18.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -3,6 +3,7 @@ package com.kime.seminar
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.postgrest.Postgrest
 import io.github.jan.supabase.gotrue.Auth
+import io.github.jan.supabase.storage.Storage
 
 object SupabaseHelper {
     // GANTI DENGAN URL DAN KEY MILIKMU
@@ -15,5 +16,6 @@ object SupabaseHelper {
     ) {
         install(Postgrest)
         install(Auth)
+        install(Storage)
     }
 }

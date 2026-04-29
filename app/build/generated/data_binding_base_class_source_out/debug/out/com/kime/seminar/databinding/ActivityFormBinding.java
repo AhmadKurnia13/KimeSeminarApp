@@ -40,9 +40,6 @@ public final class ActivityFormBinding implements ViewBinding {
   public final TextInputEditText etEmail;
 
   @NonNull
-  public final TextInputEditText etHalaman;
-
-  @NonNull
   public final TextInputEditText etNama;
 
   @NonNull
@@ -50,9 +47,6 @@ public final class ActivityFormBinding implements ViewBinding {
 
   @NonNull
   public final TextInputEditText etTanggal;
-
-  @NonNull
-  public final TextInputEditText etVersiSoal;
 
   @NonNull
   public final MaterialRadioButton rbLakiLaki;
@@ -73,9 +67,6 @@ public final class ActivityFormBinding implements ViewBinding {
   public final TextInputLayout tilEmail;
 
   @NonNull
-  public final TextInputLayout tilHalaman;
-
-  @NonNull
   public final TextInputLayout tilNama;
 
   @NonNull
@@ -85,43 +76,34 @@ public final class ActivityFormBinding implements ViewBinding {
   public final TextInputLayout tilTanggal;
 
   @NonNull
-  public final TextInputLayout tilVersiSoal;
-
-  @NonNull
   public final Toolbar toolbar;
 
   private ActivityFormBinding(@NonNull CoordinatorLayout rootView, @NonNull MaterialButton btnReset,
       @NonNull MaterialButton btnSubmit, @NonNull MaterialCheckBox cbPersetujuan,
-      @NonNull TextInputEditText etEmail, @NonNull TextInputEditText etHalaman,
-      @NonNull TextInputEditText etNama, @NonNull TextInputEditText etNoHp,
-      @NonNull TextInputEditText etTanggal, @NonNull TextInputEditText etVersiSoal,
+      @NonNull TextInputEditText etEmail, @NonNull TextInputEditText etNama,
+      @NonNull TextInputEditText etNoHp, @NonNull TextInputEditText etTanggal,
       @NonNull MaterialRadioButton rbLakiLaki, @NonNull MaterialRadioButton rbPerempuan,
       @NonNull RadioGroup rgJenisKelamin, @NonNull NestedScrollView scrollView,
       @NonNull Spinner spinnerSeminar, @NonNull TextInputLayout tilEmail,
-      @NonNull TextInputLayout tilHalaman, @NonNull TextInputLayout tilNama,
-      @NonNull TextInputLayout tilNoHp, @NonNull TextInputLayout tilTanggal,
-      @NonNull TextInputLayout tilVersiSoal, @NonNull Toolbar toolbar) {
+      @NonNull TextInputLayout tilNama, @NonNull TextInputLayout tilNoHp,
+      @NonNull TextInputLayout tilTanggal, @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.btnReset = btnReset;
     this.btnSubmit = btnSubmit;
     this.cbPersetujuan = cbPersetujuan;
     this.etEmail = etEmail;
-    this.etHalaman = etHalaman;
     this.etNama = etNama;
     this.etNoHp = etNoHp;
     this.etTanggal = etTanggal;
-    this.etVersiSoal = etVersiSoal;
     this.rbLakiLaki = rbLakiLaki;
     this.rbPerempuan = rbPerempuan;
     this.rgJenisKelamin = rgJenisKelamin;
     this.scrollView = scrollView;
     this.spinnerSeminar = spinnerSeminar;
     this.tilEmail = tilEmail;
-    this.tilHalaman = tilHalaman;
     this.tilNama = tilNama;
     this.tilNoHp = tilNoHp;
     this.tilTanggal = tilTanggal;
-    this.tilVersiSoal = tilVersiSoal;
     this.toolbar = toolbar;
   }
 
@@ -176,12 +158,6 @@ public final class ActivityFormBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.etHalaman;
-      TextInputEditText etHalaman = ViewBindings.findChildViewById(rootView, id);
-      if (etHalaman == null) {
-        break missingId;
-      }
-
       id = R.id.etNama;
       TextInputEditText etNama = ViewBindings.findChildViewById(rootView, id);
       if (etNama == null) {
@@ -197,12 +173,6 @@ public final class ActivityFormBinding implements ViewBinding {
       id = R.id.etTanggal;
       TextInputEditText etTanggal = ViewBindings.findChildViewById(rootView, id);
       if (etTanggal == null) {
-        break missingId;
-      }
-
-      id = R.id.etVersiSoal;
-      TextInputEditText etVersiSoal = ViewBindings.findChildViewById(rootView, id);
-      if (etVersiSoal == null) {
         break missingId;
       }
 
@@ -242,12 +212,6 @@ public final class ActivityFormBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tilHalaman;
-      TextInputLayout tilHalaman = ViewBindings.findChildViewById(rootView, id);
-      if (tilHalaman == null) {
-        break missingId;
-      }
-
       id = R.id.tilNama;
       TextInputLayout tilNama = ViewBindings.findChildViewById(rootView, id);
       if (tilNama == null) {
@@ -266,12 +230,6 @@ public final class ActivityFormBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tilVersiSoal;
-      TextInputLayout tilVersiSoal = ViewBindings.findChildViewById(rootView, id);
-      if (tilVersiSoal == null) {
-        break missingId;
-      }
-
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -279,9 +237,9 @@ public final class ActivityFormBinding implements ViewBinding {
       }
 
       return new ActivityFormBinding((CoordinatorLayout) rootView, btnReset, btnSubmit,
-          cbPersetujuan, etEmail, etHalaman, etNama, etNoHp, etTanggal, etVersiSoal, rbLakiLaki,
-          rbPerempuan, rgJenisKelamin, scrollView, spinnerSeminar, tilEmail, tilHalaman, tilNama,
-          tilNoHp, tilTanggal, tilVersiSoal, toolbar);
+          cbPersetujuan, etEmail, etNama, etNoHp, etTanggal, rbLakiLaki, rbPerempuan,
+          rgJenisKelamin, scrollView, spinnerSeminar, tilEmail, tilNama, tilNoHp, tilTanggal,
+          toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -9,5 +9,6 @@ data class Registration(
     @SerialName("seminar_id") val seminarId: String,
     @SerialName("participant_name") val participantName: String,
     @SerialName("participant_email") val participantEmail: String,
-    @SerialName("participant_phone") val participantPhone: String
+    @SerialName("participant_phone") val participantPhone: String,
+    @SerialName("jenis_kelamin") val jenisKelamin: String
 )

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode color overrides -->
+    <color name="kime_background">#121212</color>
+    <color name="kime_surface">#1E1E1E</color>
+    <color name="kime_primary">#BB86FC</color>
+    <color name="kime_primary_dark">#0D1B5E</color>
+    <color name="kime_secondary">#03DAC6</color>
+    <color name="kime_error">#CF6679</color>
+
+    <!-- Text colors for dark mode -->
+    <color name="kime_text_primary">#FFFFFF</color>
+    <color name="kime_text_secondary">#B3B3B3</color>
+    <color name="kime_text_hint">#808080</color>
+
+    <!-- Input field colors for dark mode -->
+    <color name="input_background_dark">#2A2A2A</color>
+    <color name="input_stroke_dark">#BB86FC</color>
+    <color name="input_text_dark">#FFFFFF</color>
+    <color name="input_hint_dark">#B3B3B3</color>
+</resources>

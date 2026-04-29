@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_success"
+        android:title="Home" />
+    <item
+        android:id="@+id/scheduleFragment"
+        android:icon="@drawable/ic_seminars"
+        android:title="Seminar" />
+    <item
+        android:id="@+id/historyFragment"
+        android:icon="@drawable/ic_history"
+        android:title="Riwayat" />
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_person"
+        android:title="Profil" />
+    <item
+        android:id="@+id/logout_action"
+        android:icon="@drawable/ic_logout"
+        android:title="Keluar" />
+</menu>

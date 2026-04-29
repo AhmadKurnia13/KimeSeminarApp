@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.appbar.AppBarLayout;
@@ -30,6 +31,9 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final MaterialButton btnDaftarSeminar;
 
   @NonNull
+  public final MaterialButton btnViewLastRegistration;
+
+  @NonNull
   public final CardView cardDaftarSeminar;
 
   @NonNull
@@ -45,10 +49,22 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final CardView cardInfo3;
 
   @NonNull
+  public final CardView cardLastRegistration;
+
+  @NonNull
+  public final RecyclerView recyclerViewPopularSeminars;
+
+  @NonNull
   public final Toolbar toolbar;
 
   @NonNull
   public final TextView tvAvatar;
+
+  @NonNull
+  public final TextView tvLastSeminarDate;
+
+  @NonNull
+  public final TextView tvLastSeminarTitle;
 
   @NonNull
   public final TextView tvUserEmail;
@@ -61,20 +77,28 @@ public final class ActivityHomeBinding implements ViewBinding {
 
   private ActivityHomeBinding(@NonNull CoordinatorLayout rootView,
       @NonNull AppBarLayout appBarLayout, @NonNull MaterialButton btnDaftarSeminar,
-      @NonNull CardView cardDaftarSeminar, @NonNull CardView cardHeader,
-      @NonNull CardView cardInfo1, @NonNull CardView cardInfo2, @NonNull CardView cardInfo3,
-      @NonNull Toolbar toolbar, @NonNull TextView tvAvatar, @NonNull TextView tvUserEmail,
+      @NonNull MaterialButton btnViewLastRegistration, @NonNull CardView cardDaftarSeminar,
+      @NonNull CardView cardHeader, @NonNull CardView cardInfo1, @NonNull CardView cardInfo2,
+      @NonNull CardView cardInfo3, @NonNull CardView cardLastRegistration,
+      @NonNull RecyclerView recyclerViewPopularSeminars, @NonNull Toolbar toolbar,
+      @NonNull TextView tvAvatar, @NonNull TextView tvLastSeminarDate,
+      @NonNull TextView tvLastSeminarTitle, @NonNull TextView tvUserEmail,
       @NonNull TextView tvUserName, @NonNull TextView tvWelcome) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.btnDaftarSeminar = btnDaftarSeminar;
+    this.btnViewLastRegistration = btnViewLastRegistration;
     this.cardDaftarSeminar = cardDaftarSeminar;
     this.cardHeader = cardHeader;
     this.cardInfo1 = cardInfo1;
     this.cardInfo2 = cardInfo2;
     this.cardInfo3 = cardInfo3;
+    this.cardLastRegistration = cardLastRegistration;
+    this.recyclerViewPopularSeminars = recyclerViewPopularSeminars;
     this.toolbar = toolbar;
     this.tvAvatar = tvAvatar;
+    this.tvLastSeminarDate = tvLastSeminarDate;
+    this.tvLastSeminarTitle = tvLastSeminarTitle;
     this.tvUserEmail = tvUserEmail;
     this.tvUserName = tvUserName;
     this.tvWelcome = tvWelcome;
@@ -119,6 +143,12 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnViewLastRegistration;
+      MaterialButton btnViewLastRegistration = ViewBindings.findChildViewById(rootView, id);
+      if (btnViewLastRegistration == null) {
+        break missingId;
+      }
+
       id = R.id.cardDaftarSeminar;
       CardView cardDaftarSeminar = ViewBindings.findChildViewById(rootView, id);
       if (cardDaftarSeminar == null) {
@@ -149,6 +179,18 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.cardLastRegistration;
+      CardView cardLastRegistration = ViewBindings.findChildViewById(rootView, id);
+      if (cardLastRegistration == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerViewPopularSeminars;
+      RecyclerView recyclerViewPopularSeminars = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewPopularSeminars == null) {
+        break missingId;
+      }
+
       id = R.id.toolbar;
       Toolbar toolbar = ViewBindings.findChildViewById(rootView, id);
       if (toolbar == null) {
@@ -158,6 +200,18 @@ public final class ActivityHomeBinding implements ViewBinding {
       id = R.id.tvAvatar;
       TextView tvAvatar = ViewBindings.findChildViewById(rootView, id);
       if (tvAvatar == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLastSeminarDate;
+      TextView tvLastSeminarDate = ViewBindings.findChildViewById(rootView, id);
+      if (tvLastSeminarDate == null) {
+        break missingId;
+      }
+
+      id = R.id.tvLastSeminarTitle;
+      TextView tvLastSeminarTitle = ViewBindings.findChildViewById(rootView, id);
+      if (tvLastSeminarTitle == null) {
         break missingId;
       }
 
@@ -180,8 +234,9 @@ public final class ActivityHomeBinding implements ViewBinding {
       }
 
       return new ActivityHomeBinding((CoordinatorLayout) rootView, appBarLayout, btnDaftarSeminar,
-          cardDaftarSeminar, cardHeader, cardInfo1, cardInfo2, cardInfo3, toolbar, tvAvatar,
-          tvUserEmail, tvUserName, tvWelcome);
+          btnViewLastRegistration, cardDaftarSeminar, cardHeader, cardInfo1, cardInfo2, cardInfo3,
+          cardLastRegistration, recyclerViewPopularSeminars, toolbar, tvAvatar, tvLastSeminarDate,
+          tvLastSeminarTitle, tvUserEmail, tvUserName, tvWelcome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

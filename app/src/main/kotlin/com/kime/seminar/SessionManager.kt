@@ -2,79 +2,94 @@ package com.kime.seminar
 
 import android.content.Context
 import android.content.SharedPreferences
-import org.json.JSONObject
+import com.kime.seminar.database.User
+import com.kime.seminar.database.UserRepository
+import kotlinx.coroutines.runBlocking
 
 class SessionManager(private val context: Context) {
 
     private val prefs: SharedPreferences =
         context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
 
+    private val userRepository = UserRepository(context)
+
     companion object {
         private const val PREF_NAME = "KimeSession"
         private const val KEY_IS_LOGGED_IN = "isLoggedIn"
-        private const val KEY_EMAIL = "email"
-        private const val KEY_NAME = "name"
-        private const val KEY_USERS = "users"
+        private const val KEY_USER_ID = "userId"
     }
 
-    fun createLoginSession(email: String, name: String) {
+    fun createLoginSession(user: User) {
         prefs.edit().apply {
             putBoolean(KEY_IS_LOGGED_IN, true)
-            putString(KEY_EMAIL, email)
-            putString(KEY_NAME, name)
+            putLong(KEY_USER_ID, user.id)
             apply()
         }
     }
 
     fun isLoggedIn(): Boolean = prefs.getBoolean(KEY_IS_LOGGED_IN, false)
 
-    fun getUserEmail(): String = prefs.getString(KEY_EMAIL, "") ?: ""
+    fun getCurrentUserId(): Long = prefs.getLong(KEY_USER_ID, -1)
 
-    fun getUserName(): String = prefs.getString(KEY_NAME, "") ?: ""
+    fun getCurrentUser(): User? {
+        val userId = getCurrentUserId()
+        return if (userId != -1L) {
+            runBlocking { userRepository.getUserById(userId) }
+        } else null
+    }
 
     fun logout() {
         prefs.edit().apply {
             remove(KEY_IS_LOGGED_IN)
-            remove(KEY_EMAIL)
-            remove(KEY_NAME)
+            remove(KEY_USER_ID)
             apply()
         }
     }
 
-    fun registerUser(name: String, email: String, password: String): Boolean {
-        return try {
-            val usersJson = prefs.getString(KEY_USERS, "{}") ?: "{}"
-            val usersObj = JSONObject(usersJson)
-
-            if (usersObj.has(email)) return false // Email sudah terdaftar
-
-            val userObj = JSONObject().apply {
-                put("name", name)
-                put("email", email)
-                put("password", password)
-            }
-            usersObj.put(email, userObj)
-            prefs.edit().putString(KEY_USERS, usersObj.toString()).apply()
-            true
-        } catch (e: Exception) {
-            false
-        }
+    fun getUserName(): String {
+        return getCurrentUser()?.name ?: "User"
     }
 
-    fun getUser(email: String): Map<String, String>? {
-        return try {
-            val usersJson = prefs.getString(KEY_USERS, "{}") ?: "{}"
-            val usersObj = JSONObject(usersJson)
-            if (usersObj.has(email)) {
-                val userObj = usersObj.getJSONObject(email)
-                mapOf(
-                    "name" to userObj.getString("name"),
-                    "email" to userObj.getString("email"),
-                    "password" to userObj.getString("password")
-                )
-            } else null
-        } catch (e: Exception) {
-            null
-        }
+    fun getUserEmail(): String {
+        return getCurrentUser()?.email ?: ""
+    }
+
+    suspend fun registerUser(name: String, email: String, password: String, gender: String, hobbies: String, city: String): User? {
+        // Check if user already exists
+        val existingUser = userRepository.getUserByEmail(email)
+        if (existingUser != null) return null
+
+        val hashedPassword = SecurityUtils.hashPassword(password)
+
+        val user = User(
+            name = name,
+            email = email,
+            password = hashedPassword,
+            gender = gender,
+            hobbies = hobbies,
+            city = city
+        )
+        val userId = userRepository.insertUser(user)
+        return user.copy(id = userId)
+    }
+
+    suspend fun loginUser(email: String, password: String): User? {
+        val user = userRepository.getUserByEmail(email)
+        if (user == null) return null
+
+        val inputHash = SecurityUtils.hashPassword(password)
+        
+        return if (user.password == inputHash || user.password == password) { 
+            // Also checking plain password for backward compatibility with existing data
+            if (user.password == password) {
+                // Auto-upgrade to hash on login
+                updateUser(user.copy(password = inputHash))
+            }
+            user
+        } else null
+    }
+
+    suspend fun updateUser(user: User) {
+        userRepository.updateUser(user)
     }
 }

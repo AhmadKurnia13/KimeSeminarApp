@@ -4,7 +4,7 @@
             "outputFile": "com.kime.seminar.test.app-mergeDebugAndroidTestResources-3:/values/values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\caches\\9.2.1\\transforms\\5605da443ee3c106bedef434a2b1473d\\workspace\\transformed\\core-1.5.0\\res\\values\\values.xml",
+                    "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\caches\\9.4.1\\transforms\\d595c039c45ea615a502268bf7a1ff40\\transformed\\core-1.5.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "4,11",
                         "startColumns": "0,0",

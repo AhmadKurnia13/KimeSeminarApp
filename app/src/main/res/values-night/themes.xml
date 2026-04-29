@@ -16,4 +16,21 @@
         <item name="android:statusBarColor">@color/kime_primary</item>
         <item name="android:navigationBarColor">@color/kime_primary</item>
     </style>
+
+    <!-- Dark Mode TextInputLayout Override -->
+    <style name="KimeTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/input_corner_radius</item>
+        <item name="boxStrokeColor">@color/selector_input_stroke</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/kime_primary_dark</item>
+        <item name="boxBackgroundColor">@color/input_background_dark</item>
+        <item name="errorIconDrawable">@null</item>
+        <!-- Dark mode text colors -->
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#B3B3B3</item>
+    </style>
 </resources>

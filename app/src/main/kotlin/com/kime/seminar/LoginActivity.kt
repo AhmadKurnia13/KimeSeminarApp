@@ -24,41 +24,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_login)
         setContentView(binding.root)
-
-        val etEmail = findViewById<EditText>(R.id.etEmail)
-        val etPassword = findViewById<EditText>(R.id.etPassword)
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
-
-        btnLogin.setOnClickListener {
-            val email = etEmail.text.toString()
-            val password = etPassword.text.toString()
-
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Isi Email dan Password!", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-
-            lifecycleScope.launch {
-                try {
-                    // Proses mencocokkan data dengan database Supabase
-                    SupabaseHelper.client.auth.signInWith(Email) {
-                        this.email = email
-                        this.password = password
-                    }
-
-                    Toast.makeText(this@LoginActivity, "Login Berhasil!", Toast.LENGTH_SHORT).show()
-
-                    // Pindah ke Beranda (Home)
-                    startActivity(Intent(this@LoginActivity, HomeActivity::class.java))
-                    finish() // Tutup halaman login agar tidak bisa di-back
-                } catch (e: Exception) {
-                    // Jika password salah atau akun tidak ada, masuk ke sini
-                    Toast.makeText(this@LoginActivity, "Login Gagal: Email atau Password salah", Toast.LENGTH_LONG).show()
-                }
-            }
-        }
 
         sessionManager = SessionManager(this)
 
@@ -72,23 +38,19 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun setupRealTimeValidation() {
-        binding.etEmail.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-                if (s.toString().isNotEmpty()) validateEmail(s.toString())
-                else binding.tilEmail.error = null
-            }
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        binding.etEmail.addTextChangedListener(createWatcher { s ->
+            if (s.isNotEmpty()) validateEmail(s) else binding.tilEmail.error = null
         })
 
-        binding.etPassword.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-                if (s.toString().isNotEmpty()) validatePassword(s.toString())
-                else binding.tilPassword.error = null
-            }
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        binding.etPassword.addTextChangedListener(createWatcher { s ->
+            if (s.isNotEmpty()) validatePassword(s) else binding.tilPassword.error = null
         })
+    }
+
+    private fun createWatcher(after: (String) -> Unit) = object : TextWatcher {
+        override fun afterTextChanged(s: Editable?) { after(s.toString()) }
+        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
     }
 
     private fun setupClickListeners() {
@@ -135,8 +97,8 @@ class LoginActivity : AppCompatActivity() {
                 binding.tilPassword.error = "Password tidak boleh kosong"
                 false
             }
-            password.length < 6 -> {
-                binding.tilPassword.error = "Password minimal 6 karakter"
+            password.length < 8 -> {
+                binding.tilPassword.error = "Password minimal 8 karakter"
                 false
             }
             else -> {
@@ -159,25 +121,30 @@ class LoginActivity : AppCompatActivity() {
         binding.btnLogin.isEnabled = false
         binding.progressLogin.visibility = View.VISIBLE
 
-        // Simulasi loading (dalam app nyata: hit API)
-        binding.root.postDelayed({
-            binding.btnLogin.isEnabled = true
-            binding.progressLogin.visibility = View.GONE
+        lifecycleScope.launch {
+            try {
+                val user = sessionManager.loginUser(email, password)
+                binding.btnLogin.isEnabled = true
+                binding.progressLogin.visibility = View.GONE
 
-            val user = sessionManager.getUser(email)
-            if (user != null && user["password"] == password) {
-                sessionManager.createLoginSession(email, user["name"] ?: "")
-                goToHome()
-            } else {
-                binding.tilEmail.error = " "
-                binding.tilPassword.error = "Email atau password salah"
-                Snackbar.make(binding.root, "❌ Email atau password salah!", Snackbar.LENGTH_SHORT).show()
+                if (user != null) {
+                    sessionManager.createLoginSession(user)
+                    goToHome()
+                } else {
+                    binding.tilEmail.error = " "
+                    binding.tilPassword.error = "Email atau password salah"
+                    Snackbar.make(binding.root, "❌ Email atau password salah!", Snackbar.LENGTH_SHORT).show()
+                }
+            } catch (e: Exception) {
+                binding.btnLogin.isEnabled = true
+                binding.progressLogin.visibility = View.GONE
+                Snackbar.make(binding.root, "❌ Gagal login: ${e.message}", Snackbar.LENGTH_SHORT).show()
             }
-        }, 800)
+        }
     }
 
     private fun goToHome() {
-        val intent = Intent(this, HomeActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out)

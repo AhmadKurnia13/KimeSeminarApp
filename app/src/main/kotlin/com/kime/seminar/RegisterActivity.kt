@@ -18,6 +18,8 @@ import androidx.lifecycle.lifecycleScope
 import io.github.jan.supabase.gotrue.auth
 import io.github.jan.supabase.gotrue.providers.builtin.Email
 import kotlinx.coroutines.launch
+import android.widget.ArrayAdapter
+import androidx.appcompat.app.AlertDialog
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -27,86 +29,45 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_register)
         setContentView(binding.root)
-
-        val etEmail = findViewById<EditText>(R.id.etEmail)
-        val etPassword = findViewById<EditText>(R.id.etPassword)
-        val btnRegister = findViewById<Button>(R.id.btnRegister)
-
-        btnRegister.setOnClickListener {
-            val email = etEmail.text.toString()
-            val password = etPassword.text.toString()
-
-            // Validasi sederhana
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Email dan Password tidak boleh kosong!", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-
-            // Proses pembuatan akun di Background (Coroutine)
-            lifecycleScope.launch {
-                try {
-                    SupabaseHelper.client.auth.signUpWith(Email) {
-                        this.email = email
-                        this.password = password
-                    }
-                    Toast.makeText(this@RegisterActivity, "Daftar Berhasil! Silakan Login.", Toast.LENGTH_LONG).show()
-
-                    // Pindah ke halaman Login setelah sukses
-                    startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
-                    finish()
-                } catch (e: Exception) {
-                    Toast.makeText(this@RegisterActivity, "Gagal daftar: ${e.message}", Toast.LENGTH_LONG).show()
-                }
-            }
-        }
 
         sessionManager = SessionManager(this)
 
+        setupAccountTypeSpinner()
         setupRealTimeValidation()
         setupClickListeners()
     }
 
+    private fun setupAccountTypeSpinner() {
+        val accountTypes = listOf("Pilih Tipe Akun", "Personal", "Organisasi")
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, accountTypes)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        binding.spinnerAccountType.adapter = adapter
+    }
+
     private fun setupRealTimeValidation() {
-        binding.etName.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-                if (s.toString().isNotEmpty()) validateName(s.toString())
-                else binding.tilName.error = null
-            }
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        binding.etName.addTextChangedListener(createWatcher { s ->
+            if (s.isNotEmpty()) validateName(s) else binding.tilName.error = null
         })
 
-        binding.etEmail.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-                if (s.toString().isNotEmpty()) validateEmail(s.toString())
-                else binding.tilEmail.error = null
-            }
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        binding.etEmail.addTextChangedListener(createWatcher { s ->
+            if (s.isNotEmpty()) validateEmail(s) else binding.tilEmail.error = null
         })
 
-        binding.etPassword.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-                if (s.toString().isNotEmpty()) validatePassword(s.toString())
-                else binding.tilPassword.error = null
-            }
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        binding.etPassword.addTextChangedListener(createWatcher { s ->
+            if (s.isNotEmpty()) validatePassword(s) else binding.tilPassword.error = null
         })
 
-        binding.etConfirmPassword.addTextChangedListener(object : TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-                if (s.toString().isNotEmpty()) validateConfirmPassword(
-                    binding.etPassword.text.toString(),
-                    s.toString()
-                )
-                else binding.tilConfirmPassword.error = null
-            }
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+        binding.etConfirmPassword.addTextChangedListener(createWatcher { s ->
+            if (s.isNotEmpty()) validateConfirmPassword(binding.etPassword.text.toString(), s)
+            else binding.tilConfirmPassword.error = null
         })
+    }
+
+    private fun createWatcher(after: (String) -> Unit) = object : TextWatcher {
+        override fun afterTextChanged(s: Editable?) { after(s.toString()) }
+        override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+        override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
     }
 
     private fun setupClickListeners() {
@@ -115,7 +76,14 @@ class RegisterActivity : AppCompatActivity() {
         }
 
         binding.btnRegister.setOnClickListener {
-            performRegister()
+            showConfirmationDialog()
+        }
+
+        // Gesture Interaction: Long Press to Reset
+        binding.btnRegister.setOnLongClickListener {
+            resetForm()
+            Toast.makeText(this, "Form telah di-reset 🔄", Toast.LENGTH_SHORT).show()
+            true
         }
 
         binding.tvLogin.setOnClickListener {
@@ -124,21 +92,91 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    private fun resetForm() {
+        binding.apply {
+            etName.text?.clear()
+            etEmail.text?.clear()
+            etPassword.text?.clear()
+            etConfirmPassword.text?.clear()
+            etCity.text?.clear()
+            rgGender.clearCheck()
+            cbTech.isChecked = false
+            cbBusiness.isChecked = false
+            cbArt.isChecked = false
+            cbSports.isChecked = false
+            spinnerAccountType.setSelection(0)
+            
+            tilName.error = null
+            tilEmail.error = null
+            tilPassword.error = null
+            tilConfirmPassword.error = null
+            tilCity.error = null
+        }
+    }
+
+    private fun showConfirmationDialog() {
+        if (!validateAll()) return
+
+        AlertDialog.Builder(this, R.style.KimeAlertDialog)
+            .setTitle("Konfirmasi")
+            .setMessage("Apakah data yang Anda masukkan sudah benar?")
+            .setPositiveButton("Ya, Daftar") { _, _ -> performRegister() }
+            .setNegativeButton("Cek Kembali", null)
+            .show()
+    }
+
+    private fun validateAll(): Boolean {
+        val name = binding.etName.text.toString().trim()
+        val email = binding.etEmail.text.toString().trim()
+        val password = binding.etPassword.text.toString().trim()
+        val confirm = binding.etConfirmPassword.text.toString().trim()
+        val city = binding.etCity.text.toString().trim()
+
+        val isNameValid = validateName(name)
+        val isEmailValid = validateEmail(email)
+        val isPassValid = validatePassword(password)
+        val isConfirmValid = validateConfirmPassword(password, confirm)
+        val isCityValid = validateCity(city)
+        
+        // Gender validation
+        val isGenderSelected = binding.rgGender.checkedRadioButtonId != -1
+        if (!isGenderSelected) {
+            Toast.makeText(this, "Silakan pilih jenis kelamin", Toast.LENGTH_SHORT).show()
+        }
+
+        // Hobbies validation
+        val selectedHobbies = getSelectedHobbies()
+        val isHobbiesValid = selectedHobbies.isNotEmpty()
+        if (!isHobbiesValid) {
+            Toast.makeText(this, "Pilih minimal 1 hobi", Toast.LENGTH_SHORT).show()
+        }
+
+        // Account Type validation
+        val isAccountTypeValid = binding.spinnerAccountType.selectedItemPosition != 0
+        if (!isAccountTypeValid) {
+            Toast.makeText(this, "Silakan pilih tipe akun", Toast.LENGTH_SHORT).show()
+        }
+
+        return isNameValid && isEmailValid && isPassValid && isConfirmValid && isCityValid && 
+               isGenderSelected && isHobbiesValid && isAccountTypeValid
+    }
+
+    private fun getSelectedHobbies(): List<String> {
+        val list = mutableListOf<String>()
+        if (binding.cbTech.isChecked) list.add("Teknologi")
+        if (binding.cbBusiness.isChecked) list.add("Bisnis")
+        if (binding.cbArt.isChecked) list.add("Seni")
+        if (binding.cbSports.isChecked) list.add("Olahraga")
+        return list
+    }
+
     private fun validateName(name: String): Boolean {
-        return when {
-            name.isEmpty() -> {
-                binding.tilName.error = "Nama tidak boleh kosong"
-                false
-            }
-            name.length < 3 -> {
-                binding.tilName.error = "Nama minimal 3 karakter"
-                false
-            }
-            else -> {
-                binding.tilName.error = null
-                binding.tilName.isErrorEnabled = false
-                true
-            }
+        return if (name.length < 3) {
+            binding.tilName.error = "Nama minimal 3 karakter"
+            false
+        } else {
+            binding.tilName.error = null
+            true
         }
     }
 
@@ -152,51 +190,59 @@ class RegisterActivity : AppCompatActivity() {
                 binding.tilEmail.error = "Email harus mengandung '@'"
                 false
             }
-            !android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches() -> {
-                binding.tilEmail.error = "Format email tidak valid"
-                false
-            }
             else -> {
                 binding.tilEmail.error = null
-                binding.tilEmail.isErrorEnabled = false
                 true
             }
         }
     }
 
     private fun validatePassword(password: String): Boolean {
+        val hasMinLength = password.length >= 8
+        val hasUpperCase = password.any { it.isUpperCase() }
+        val hasSpecialChar = password.any { !it.isLetterOrDigit() }
+
         return when {
             password.isEmpty() -> {
                 binding.tilPassword.error = "Password tidak boleh kosong"
                 false
             }
-            password.length < 6 -> {
-                binding.tilPassword.error = "Password minimal 6 karakter"
+            !hasMinLength -> {
+                binding.tilPassword.error = "Minimal 8 karakter"
+                false
+            }
+            !hasUpperCase -> {
+                binding.tilPassword.error = "Harus ada huruf KAPITAL"
+                false
+            }
+            !hasSpecialChar -> {
+                binding.tilPassword.error = "Harus ada karakter spesial (!@#$%^&*)"
                 false
             }
             else -> {
                 binding.tilPassword.error = null
-                binding.tilPassword.isErrorEnabled = false
                 true
             }
         }
     }
 
     private fun validateConfirmPassword(password: String, confirm: String): Boolean {
-        return when {
-            confirm.isEmpty() -> {
-                binding.tilConfirmPassword.error = "Konfirmasi password tidak boleh kosong"
-                false
-            }
-            password != confirm -> {
-                binding.tilConfirmPassword.error = "Password tidak cocok"
-                false
-            }
-            else -> {
-                binding.tilConfirmPassword.error = null
-                binding.tilConfirmPassword.isErrorEnabled = false
-                true
-            }
+        return if (password != confirm) {
+            binding.tilConfirmPassword.error = "Password tidak cocok"
+            false
+        } else {
+            binding.tilConfirmPassword.error = null
+            true
+        }
+    }
+
+    private fun validateCity(city: String): Boolean {
+        return if (city.isEmpty()) {
+            binding.tilCity.error = "Kota tidak boleh kosong"
+            false
+        } else {
+            binding.tilCity.error = null
+            true
         }
     }
 
@@ -204,36 +250,30 @@ class RegisterActivity : AppCompatActivity() {
         val name = binding.etName.text.toString().trim()
         val email = binding.etEmail.text.toString().trim()
         val password = binding.etPassword.text.toString().trim()
-        val confirmPassword = binding.etConfirmPassword.text.toString().trim()
-
-        val isNameValid = validateName(name)
-        val isEmailValid = validateEmail(email)
-        val isPasswordValid = validatePassword(password)
-        val isConfirmValid = validateConfirmPassword(password, confirmPassword)
-
-        if (!isNameValid || !isEmailValid || !isPasswordValid || !isConfirmValid) return
+        val gender = if (binding.rbMale.isChecked) "Laki-laki" else "Perempuan"
+        val hobbies = getSelectedHobbies().joinToString(", ")
+        val city = binding.etCity.text.toString().trim()
 
         binding.btnRegister.isEnabled = false
         binding.progressRegister.visibility = View.VISIBLE
 
-        binding.root.postDelayed({
-            binding.btnRegister.isEnabled = true
-            binding.progressRegister.visibility = View.GONE
+        lifecycleScope.launch {
+            try {
+                val user = sessionManager.registerUser(name, email, password, gender, hobbies, city)
+                binding.btnRegister.isEnabled = true
+                binding.progressRegister.visibility = View.GONE
 
-            val success = sessionManager.registerUser(name, email, password)
-            if (success) {
-                Snackbar.make(binding.root, "✅ Registrasi berhasil! Silakan login.", Snackbar.LENGTH_LONG).show()
-                binding.root.postDelayed({
-                    val intent = Intent(this, LoginActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-                    startActivity(intent)
-                    overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
-                    finish()
-                }, 1500)
-            } else {
-                binding.tilEmail.error = "Email sudah terdaftar, gunakan email lain"
-                Snackbar.make(binding.root, "❌ Email sudah terdaftar!", Snackbar.LENGTH_SHORT).show()
+                if (user != null) {
+                    Snackbar.make(binding.root, "✅ Registrasi berhasil!", Snackbar.LENGTH_LONG).show()
+                    binding.root.postDelayed({ finish() }, 1500)
+                } else {
+                    binding.tilEmail.error = "Email sudah terdaftar"
+                }
+            } catch (e: Exception) {
+                binding.btnRegister.isEnabled = true
+                binding.progressRegister.visibility = View.GONE
+                Toast.makeText(this@RegisterActivity, "Error: ${e.message}", Toast.LENGTH_SHORT).show()
             }
-        }, 800)
+        }
     }
 }

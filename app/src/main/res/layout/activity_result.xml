@@ -149,7 +149,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_person"
-                        android:tint="#3F51B5"
+                        app:tint="#3F51B5"
                         android:contentDescription="Nama" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -188,7 +188,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_email"
-                        android:tint="#3F51B5"
+                        app:tint="#3F51B5"
                         android:contentDescription="Email" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -227,7 +227,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_phone"
-                        android:tint="#3F51B5"
+                        app:tint="#3F51B5"
                         android:contentDescription="Phone" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -266,7 +266,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_person"
-                        android:tint="#FF8F00"
+                        app:tint="#FF8F00"
                         android:contentDescription="Gender" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -305,7 +305,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_calendar"
-                        android:tint="#3F51B5"
+                        app:tint="#3F51B5"
                         android:contentDescription="Date" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -344,7 +344,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_badge"
-                        android:tint="#3F51B5"
+                        app:tint="#3F51B5"
                         android:contentDescription="Version" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -383,7 +383,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_school"
-                        android:tint="#3F51B5"
+                        app:tint="#3F51B5"
                         android:contentDescription="Page" />
                     <LinearLayout
                         android:layout_width="0dp"
@@ -422,7 +422,7 @@
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:src="@drawable/ic_seminars"
-                        android:tint="#1A237E"
+                        app:tint="#1A237E"
                         android:contentDescription="Seminar" />
                     <LinearLayout
                         android:layout_width="0dp"

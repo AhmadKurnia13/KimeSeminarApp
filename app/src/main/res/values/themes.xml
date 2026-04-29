@@ -15,7 +15,6 @@
         <item name="colorOnSurface">@color/kime_text_primary</item>
         <item name="android:statusBarColor">@color/kime_primary_dark</item>
         <item name="android:navigationBarColor">@color/kime_surface</item>
-        <item name="android:windowLightNavigationBar">true</item>
         <item name="textInputStyle">@style/KimeTextInputLayout</item>
         <item name="materialButtonStyle">@style/KimePrimaryButton</item>
     </style>
@@ -24,7 +23,6 @@
     <style name="Theme.KimeSeminar.Splash" parent="Theme.KimeSeminar">
         <item name="android:statusBarColor">@color/kime_primary</item>
         <item name="android:navigationBarColor">@color/kime_primary</item>
-        <item name="android:windowLightNavigationBar">false</item>
         <item name="android:windowLightStatusBar">false</item>
     </style>
 
@@ -58,7 +56,7 @@
     </style>
 
     <!-- Primary Button -->
-    <style name="KimePrimaryButton" parent="Widget.MaterialComponents.Button">
+    <style name="KimeButtonPrimary" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">@color/kime_primary</item>
         <item name="cornerRadius">@dimen/btn_corner_radius</item>
         <item name="android:textColor">@color/kime_text_on_primary</item>
@@ -70,15 +68,29 @@
         <item name="rippleColor">@color/kime_white_alpha_30</item>
     </style>
 
+    <!-- Legacy Primary Button Alias -->
+    <style name="KimePrimaryButton" parent="KimeButtonPrimary" />
+
     <!-- Secondary / Outlined Button -->
-    <style name="KimeOutlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <style name="KimeButtonSecondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
         <item name="strokeColor">@color/kime_primary</item>
         <item name="strokeWidth">1.5dp</item>
         <item name="cornerRadius">@dimen/btn_corner_radius</item>
         <item name="android:textColor">@color/kime_primary</item>
         <item name="android:textSize">@dimen/text_md</item>
         <item name="android:minHeight">@dimen/btn_height</item>
-        <item name="rippleColor">@color/kime_primary_surface</item>
+    </style>
+
+    <style name="KimeOutlineButton" parent="KimeButtonSecondary" />
+
+    <!-- Danger Button (Red) -->
+    <style name="KimeButtonDanger" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/kime_error</item>
+        <item name="cornerRadius">@dimen/btn_corner_radius</item>
+        <item name="android:textColor">@color/kime_text_on_primary</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="elevation">4dp</item>
+        <item name="android:minHeight">@dimen/btn_height</item>
     </style>
 
     <!-- Accent / Gold Button -->

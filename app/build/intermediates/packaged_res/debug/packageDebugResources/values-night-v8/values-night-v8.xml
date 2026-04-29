@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="input_background_dark">#2A2A2A</color>
+    <color name="input_hint_dark">#B3B3B3</color>
+    <color name="input_stroke_dark">#BB86FC</color>
+    <color name="input_text_dark">#FFFFFF</color>
+    <color name="kime_background">#121212</color>
+    <color name="kime_error">#CF6679</color>
+    <color name="kime_primary">#BB86FC</color>
+    <color name="kime_primary_dark">#0D1B5E</color>
+    <color name="kime_secondary">#03DAC6</color>
+    <color name="kime_surface">#1E1E1E</color>
+    <color name="kime_text_hint">#808080</color>
+    <color name="kime_text_primary">#FFFFFF</color>
+    <color name="kime_text_secondary">#B3B3B3</color>
+    <style name="KimeTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/input_corner_radius</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/input_corner_radius</item>
+        <item name="boxStrokeColor">@color/selector_input_stroke</item>
+        <item name="boxStrokeWidth">1.5dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="hintTextColor">@color/kime_primary_dark</item>
+        <item name="boxBackgroundColor">@color/input_background_dark</item>
+        <item name="errorIconDrawable">@null</item>
+        
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColorHint">#B3B3B3</item>
+    </style>
     <style name="Theme.KimeSeminar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/kime_primary</item>
         <item name="colorPrimaryVariant">@color/kime_primary_dark</item>

@@ -201,6 +201,125 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textPassword"
+                        android:imeOptions="actionNext"
+                        android:textSize="15sp"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Gender selection (RadioGroup) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Jenis Kelamin"
+                    android:textColor="@color/kime_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-laki"
+                        android:textColor="@color/kime_text_primary"
+                        android:buttonTint="@color/kime_primary" />
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:text="Perempuan"
+                        android:textColor="@color/kime_text_primary"
+                        android:buttonTint="@color/kime_primary" />
+                </RadioGroup>
+
+                <!-- Hobby selection (CheckBoxes) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Hobi (Pilih minimal 1)"
+                    android:textColor="@color/kime_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:layout_marginTop="8dp">
+                    <CheckBox
+                        android:id="@+id/cbTech"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teknologi"
+                        android:textColor="@color/kime_text_primary"
+                        android:buttonTint="@color/kime_primary" />
+                    <CheckBox
+                        android:id="@+id/cbBusiness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bisnis"
+                        android:textColor="@color/kime_text_primary"
+                        android:buttonTint="@color/kime_primary" />
+                    <CheckBox
+                        android:id="@+id/cbArt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Seni"
+                        android:textColor="@color/kime_text_primary"
+                        android:buttonTint="@color/kime_primary" />
+                    <CheckBox
+                        android:id="@+id/cbSports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Olahraga"
+                        android:textColor="@color/kime_text_primary"
+                        android:buttonTint="@color/kime_primary" />
+                </GridLayout>
+
+                <!-- Account Type (Spinner) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Tipe Akun"
+                    android:textColor="@color/kime_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerAccountType"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_card_rounded"
+                    android:backgroundTint="#F0F2FF"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp" />
+
+                <!-- City field -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilCity"
+                    style="@style/KimeTextInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:hint="Kota Asal"
+                    app:startIconDrawable="@drawable/ic_person"
+                    app:startIconTint="@color/kime_primary">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
                         android:imeOptions="actionDone"
                         android:textSize="15sp"
                         android:paddingTop="16dp"
@@ -254,6 +373,18 @@
                         android:textStyle="bold"
                         android:padding="4dp" />
                 </LinearLayout>
+
+                <!-- Copyright text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="© Ahmad Kurnia"
+                    android:textColor="#9E9E9E"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
 
             </LinearLayout>
         </ScrollView>

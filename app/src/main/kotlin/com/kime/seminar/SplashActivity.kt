@@ -9,6 +9,11 @@ import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
 import com.kime.seminar.databinding.ActivitySplashBinding
 
+import androidx.lifecycle.lifecycleScope
+import kotlinx.coroutines.launch
+import io.github.jan.supabase.postgrest.postgrest
+import android.util.Log
+
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 
@@ -21,6 +26,9 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         sessionManager = SessionManager(this)
+
+        // Test Supabase Connection Instantly
+        testSupabaseConnection()
 
         // Animasi logo
         val fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in)
@@ -35,9 +43,21 @@ class SplashActivity : AppCompatActivity() {
         }, 2500)
     }
 
+    private fun testSupabaseConnection() {
+        lifecycleScope.launch {
+            try {
+                // Try to fetch a single row from seminars to test connection
+                val result = SupabaseHelper.client.postgrest["seminars"].select()
+                Log.d("KONEKSI_CEK", "Koneksi Supabase Berhasil! ✅")
+            } catch (e: Exception) {
+                Log.e("KONEKSI_CEK", "Koneksi Supabase Gagal: ${e.message} ❌")
+            }
+        }
+    }
+
     private fun navigateNext() {
         val intent = if (sessionManager.isLoggedIn()) {
-            Intent(this, HomeActivity::class.java)
+            Intent(this, MainActivity::class.java)
         } else {
             Intent(this, LoginActivity::class.java)
         }

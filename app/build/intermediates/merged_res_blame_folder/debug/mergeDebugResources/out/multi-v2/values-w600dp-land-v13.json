@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.kime.seminar.app-mergeDebugResources-33:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
+            "outputFile": "com.kime.seminar.app-mergeDebugResources-54:/values-w600dp-land-v13/values-w600dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\caches\\9.2.1\\transforms\\9e74ffc4352bd4263e793b4c7b60e01e\\workspace\\transformed\\material-1.11.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
+                    "source": "C:\\Users\\MyBook Hype AMD\\.gradle\\caches\\9.4.1\\transforms\\f1e29b861d2bc123874fe92a30ffe9b5\\transformed\\material-1.11.0\\res\\values-w600dp-land-v13\\values-w600dp-land-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

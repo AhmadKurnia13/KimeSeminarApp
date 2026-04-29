@@ -1,0 +1,52 @@
+<navigation
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/nav_graph"
+app:startDestination="@id/homeFragment" >
+<fragment
+    android:id="@+id/homeFragment"
+    android:name="com.kime.seminar.HomeFragment"
+    android:label="Home"
+    tools:layout="@layout/fragment_home" />
+<fragment
+    android:id="@+id/scheduleFragment"
+    android:name="com.kime.seminar.ScheduleFragment"
+    android:label="Seminar"
+    tools:layout="@layout/fragment_schedule" />
+<fragment
+    android:id="@+id/historyFragment"
+    android:name="com.kime.seminar.HistoryFragment"
+    android:label="Riwayat"
+    tools:layout="@layout/activity_registration_history" />
+<fragment
+    android:id="@+id/profileFragment"
+    android:name="com.kime.seminar.ProfileFragment"
+    android:label="Profil"
+    tools:layout="@layout/activity_profile" />
+<fragment
+    android:id="@+id/eventDetailFragment"
+    android:name="com.kime.seminar.EventDetailFragment"
+    android:label="Detail Seminar"
+    tools:layout="@layout/activity_seminar_detail" >
+
+    <argument
+        android:name="seminarId"
+        app:argType="string" />
+
+</fragment>
+<fragment
+    android:id="@+id/ticketQRFragment"
+    android:name="com.kime.seminar.TicketQRFragment"
+    android:label="Tiket QR"
+    tools:layout="@layout/fragment_ticket_qr" >
+
+    <argument
+        android:name="seminarId"
+        app:argType="long" />
+    <argument
+        android:name="registrationId"
+        app:argType="long" />
+
+</fragment>
+</navigation>
