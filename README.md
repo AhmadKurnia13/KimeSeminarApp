@@ -53,7 +53,7 @@ KimeSeminarApp/
 -   **Utils**: ViewBinding, Coroutines, Lifecycle (LifecycleScope)
 
 ## 📺 Demo Video
-Link YouTube: [Coming Soon] ⏳
+Link YouTube: (https://youtu.be/w_XPAoFJMo8)
 
 ---
 
