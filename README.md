@@ -1,3 +1,5 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w_XPAoFJMo8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 # KimeSeminarApp 🎓
 
 **KimeSeminarApp** adalah aplikasi manajemen pendaftaran seminar berbasis Android yang dirancang untuk memudahkan mahasiswa dan peserta umum dalam mencari, menjadwalkan, dan mendaftar ke berbagai seminar akademik maupun profesional. Aplikasi ini mengintegrasikan database cloud **Supabase** dengan penyimpanan lokal **Room Database** untuk memastikan pengalaman pengguna yang cepat dan reliabel, bahkan dalam kondisi offline.
